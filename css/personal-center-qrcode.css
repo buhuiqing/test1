@@ -1,0 +1,92 @@
+.personal-center-qrcode {
+	background-color: #c6caca;
+}
+
+.personal-center-qrcode .wrap {
+	background-color: #dde1e1;
+	height: 550px;
+	border-radius: 5px;
+	margin-top: 13px;
+}
+
+.personal-center-qrcode .wrap h4 {
+	font-weight: bold;
+	color: #29323b;
+	margin-left: 25px;
+	margin-top: 25px;
+	font-family: SimHei;
+	padding-top: 20px;
+}
+
+.personal-center-qrcode .wrap hr {
+	width: 95%;
+	margin-left: 25px;
+	border: 1px solid #ccc;
+	border-left-width: 0;
+	border-right-width: 0;
+	border-bottom-width: 0;
+}
+
+.personal-center-qrcode .wrap .onelevel-url {
+	margin-left: 25px;
+	font-size: 16px;
+	color:#656c73;
+}
+
+.personal-center-qrcode .wrap .onelevel-qrcode {
+	margin-left: 33px;
+	font-size: 16px;
+	color:#656c73;
+}
+
+.personal-center-qrcode .wrap input {
+	margin-left: 10px;
+	width: 240px;
+	height: 50px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #dadede;
+	outline: none;
+}
+
+.personal-center-qrcode .wrap .qrcode-div {
+	display: inherit;
+	border:1px solid #ccc;
+	width: 240px;
+	height: 240px;
+	background-color: #dadede;
+	margin-left: 106px;
+	margin-top: -20px;
+}
+
+.personal-center-qrcode .wrap .qrcode-div div {
+	margin-top: 88px;
+}
+
+.personal-center-qrcode .wrap .qrcode-div span {
+	font-weight: bold;
+	font-size: 16px;
+	color: #656c73;
+}
+
+.personal-center-qrcode .wrap .btn-default {
+	width: 240px;
+	height: 55px;
+	background-color: #068fe4;
+	border-radius: 5px;
+	margin-top: 20px;
+	margin-left: 106px;
+	border:1px solid #ccc;
+	outline: none;
+}
+
+.personal-center-qrcode .wrap .btn-default span {
+	color: #ffffff;
+	font-size: 16px;
+}
+
+@media (max-width: 1583px) {
+}
+
+@media (max-width: 768px) {
+}

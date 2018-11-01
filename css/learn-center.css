@@ -1,0 +1,33 @@
+.learn-center {
+	background-color: #c6caca;
+}
+
+.learn-center .wrap {
+	background-color: #dde1e1;
+	height: 550px;
+	border-radius: 5px;
+	margin-top: 13px;
+}
+
+.learn-center .index-gohome {
+	margin-top:-60px;
+	margin-right:230px;
+	float:right;
+	position: relative;
+}
+
+@media (max-width: 1583px) {
+  .learn-center .index-gohome {
+	margin-top:-60px;
+	margin-right:20px;
+	float:right;
+  }
+}
+
+@media (max-width: 768px) {
+  .learn-center .index-gohome {
+	margin-top:-60px;
+	margin-right:0px;
+	float:right;
+  }
+}

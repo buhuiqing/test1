@@ -1,0 +1,153 @@
+.upload-avatar-body {
+	background-color: #c6caca;
+}
+.upload-avatar-body {
+	background-color: #fff;
+	min-width: 1100px;
+	font-size: 14px;
+}
+.upload-avatar-body .upload-avatar-body-logo{
+	margin: 80px 0 30px;
+    height: 28px;
+}
+.upload-avatar-body .title {
+    height: 100px;
+    margin-bottom: 25px;
+    background-color: #004b80;
+}
+.upload-avatar-body .title h4{
+	height: 100px;
+	padding-left: 60px;
+	line-height: 100px;
+	color: #fff;
+}
+.upload-avatar-body .col-md-6 {
+	padding-left: 30px;
+}
+.upload-avatar-body .content {
+	border-radius: 5px;
+	margin-top: 15px;
+	height: 600px;
+}
+
+.upload-avatar-body .content h4 {
+	margin-left:25px;
+	margin-top:15px;
+	font-family: SimHei;
+}
+
+.upload-avatar-body .content hr {
+	border:1px solid #ccc;
+	margin: 15px 15px 25px 25px;
+	border-top-width: 0;
+	border-left-width: 0;
+	border-right-width: 0;
+}
+
+.upload-avatar-body .left-div {
+	margin-bottom: 15px;
+}
+
+.upload-avatar-body .content-left {
+ 	display: table-cell;
+    background-color: #f1f1f1;
+    border: solid 1px #e2e2e2;
+	border-radius:5px;
+	width: 380px;
+	height:380px;
+	vertical-align:middle;
+}
+
+.upload-avatar-body #browse {
+	display: none;
+}
+
+.upload-avatar-body .left-text,.right-text {
+	color:#656c73;
+}
+
+.upload-avatar-body #editImg {
+	 vertical-align:middle;
+	 width: 120px;
+	 height: 119px;
+}
+
+.upload-avatar-body h5 {
+	color:#0f0e0e;
+	font-size: 16px;
+	font-family: SimHei;
+}
+
+.upload-avatar-body .large-image {
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	display: block;
+	margin-top: 15px;
+}
+
+.upload-avatar-body .middle-image {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	display: block;
+    margin-top: 10px;
+	margin-left: 20px;
+}
+
+.upload-avatar-body .small-image {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	display: block;
+    margin-top: 10px;
+	margin-left: 40px;
+}
+
+.upload-avatar-body .large-text {
+	color:#29323b;
+	font-weight: bold;
+	margin-left: 5px;
+}
+
+.upload-avatar-body .middle-text {
+	color:#29323b;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.upload-avatar-body .small-text {
+	color:#29323b;
+	font-weight: bold;
+    margin-left: 15px;
+}
+
+.upload-avatar-body .btn-default {
+	background-color:#068fe4;
+	width: 200px;
+    height: 55px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 100px;
+    box-shadow: none;
+    outline: none;
+}
+
+.upload-avatar-body .save-text {
+	color: #ffffff;
+	font-size: 15px;
+}
+
+.upload-avatar-body .index-gohome {
+	margin-top:-60px;
+	margin-right:220px;
+	float:right;
+	position: relative;
+}
+
+@media (max-width: 1583px) {
+}
+
+@media (max-width: 768px) {
+}

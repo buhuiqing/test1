@@ -1,0 +1,533 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+  <meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1"/>
+  <title>象谱</title>
+  <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/radialindicator.css">
+  <script src="libs/jquery.min.js"></script>
+  <script src="js/common.js"></script>
+  <style>
+    /* 小圆点样式 */
+    #dropIcon {
+      z-index: 9999;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      top: 600px;
+      left: 83%;
+      position: absolute;
+    }
+    #dropImg{
+      width: 50px;
+      height: 50px;
+      background: url();
+    }
+    .first-menu {
+      z-index: 998;
+      width: 240px;
+      background-color: #000;
+      border-radius: 10px;
+      position: relative;
+      color: #a4a4a5;
+      /* margin-top: -80px;
+      margin-left: -80px; */
+      display: none;
+      overflow-y: auto;
+    }
+    .first-menu img {
+      width: 24px;
+      height: 24px;
+      display: block;
+    }
+    .first-menu .icon-title {
+      width: 100%;
+      height: 15%;
+      font-size: 18px;
+      padding-left: 40px;
+      line-height: 49px;
+    }
+    .icon-title .title-stars{
+      margin-top:10px;
+      margin-right: 30px;
+      float: right;
+    }
+    .first-menu .icon-default {
+      width:100%;
+      height:20%;
+    }
+    .first-menu .icon-wrap {
+      width:100%;
+      height:60%;
+    }
+    .first-menu ul {
+      list-style: none;
+      padding-left: 3px;
+      margin-top: -8px;
+    }
+    .first-menu ul li {
+      float: left;
+      width: 33%;
+      margin-bottom: 5px;
+    }
+    .first-menu ul li a {
+      margin-bottom: 8px;
+      line-height: 20px;
+      color: #a4a4a5;
+      display: block;
+    }
+    .first-menu hr {
+      margin-top: -5px;
+      margin-left: 30px;
+      margin-right: 30px;
+      height: 0;
+      border-top:1px solid #383a3d;
+      border-right: 0;
+      border-bottom: 0;
+      border-left: 0;
+    }
+    #firstMenu::-webkit-scrollbar-track     {/* 划动块top的颜色 */
+      background:#8DB6CD;
+    }
+    #firstMenu::-webkit-scrollbar-track-piece {  /* 划动块背景的颜色 */
+      background:#DCDCDC;
+      border-radius: 10px;
+    }
+    #firstMenu::-webkit-scrollbar-thumb{/* 划动块bottom  的颜色 */
+      background:#8DB6CD;
+      border-radius:4px;
+    }
+    #firstMenu::-webkit-scrollbar-corner {
+      background:#0000EE;
+    }
+    #firstMenu::-webkit-scrollbar-resizer  {
+      background:#0000EE;
+    }
+    #firstMenu::-webkit-scrollbar { width: 12px;}/* 滚动槽 */
+    #firstMenu::-webkit-scrollbar-track { border-radius: 10px;}/* 滚动条滑块 */
+    #firstMenu::-webkit-scrollbar-thumb {    border-radius: 10px;}
+  </style>
+</head>
+<body class="index-body" id="indexBody" style="background-color: #0a0e13">
+<script type=text/javascript>
+ var entrancenull=JSON.parse(storage.getItem("enterall"+localast)).entranceType;//判断从微连海、宝、娃那个入口进的
+  if(isNull(window.sessionStorage.getItem("account"+localast)) || entrancenull==undefined){ //判断是否退出浏览器 退出就要从新登陆
+    var accountMsg;
+    if (window.localStorage.getItem('REMEMBER_ACCOUNT_MSG'+localast)) {
+      accountMsg= window.localStorage.getItem('REMEMBER_ACCOUNT_MSG'+localast)|| '';
+    }
+    storage.clear();
+    window.localStorage.setItem('REMEMBER_ACCOUNT_MSG'+localast,accountMsg || '')
+    window.location.href = "login.html";
+  }
+</script>
+  <iframe frameborder="0" name="iframe-name" style="display: none;" scrolling="auto" allowfullscreen="true" allowtransparency="true" id="iframeDom"></iframe>
+  <div id="dropIcon" draggable="true">
+    <!-- 小圆点注釋 -->
+    <div id="dropImg" style="display:block;"><img src="images/nav.png" ></div>
+    <div class="first-menu" id="firstMenu" style="opacity: 0.8;padding-top: 25px">
+<!--      <div class="icon-title">
+        <span id="title"></span>
+        <a class="title-stars" onclick="javascript:refresh()"><img src="images/title-stars.png"></a>
+      </div>-->
+      <!--<hr>-->
+      <!--<div class="icon-default"></div>-->
+     <div class="icon-wrap">
+       <ul class="text-center">
+         <li>
+           <a onclick="javascript:goback()"><img src="images/icon/back.png" class="center-block"></a>
+           <a onclick="javascript:goback()">后退</a>
+         </li>
+         <li>
+           <a onclick="javascript:concent()"><img src="images/icon/home.png" class="center-block"></a>
+           <a onclick="javascript:concent()">主页</a>
+         </li>
+<!--         <li>
+           <a onclick="javascript:refresh()"><img src="images/title-stars.png" class="center-block"></a>
+           <a onclick="javascript:refresh()">七星</a>
+         </li>-->
+         <li>
+           <a onclick="javascript:goforward()"><img src="images/icon/forward.png" class="center-block"></a>
+           <a onclick="javascript:goforward()">向前</a>
+         </li>
+       </ul>
+        <ul id="ulDefault">
+        </ul>
+        <ul id="ulIcon">
+        </ul>
+     </div>
+    </div>
+  </div>
+
+  <!-- 七星图页面 -->
+  <div class="login-body" id="servenstars">
+    <div class="kaijitupian-one-class" id="kaijitupian-one-id">
+      <!-- <img src="images/2.jpg" alt=".."> -->
+      <div class="center">
+        <div class="center-t">
+          <div class="center-tb" id="starsbtn"><img src="images/sevenstars-line.png"></div>
+          <ul>
+            <li class="starsall stars1">
+              <img src="images/sevenstars-icon1.png">
+              <!--弹框背景-->
+
+            </li>
+            <li class="starsall stars2">
+              <img src="images/sevenstars-icon2.png">
+              <!--弹框背景-->
+
+            </li>
+            <li class="starsall stars3">
+              <img src="images/sevenstars-icon3.png">
+              <!--弹框背景-->
+
+            </li>
+            <li class="starsall stars4">
+              <img src="images/sevenstars-icon4.png">
+              <!--弹框背景-->
+
+            </li>
+            <li class="starsall stars5">
+              <img src="images/sevenstars-icon5.png">
+              <!--弹框背景-->
+
+            </li>
+            <li class="starsall stars6">
+              <img src="images/sevenstars-icon6.png">
+              <!--弹框背景-->
+
+            </li>
+            <li class="starsall stars7">
+              <img src="images/sevenstars-icon7.png">
+              <!--弹框背景-->
+
+            </li>
+          </ul>
+        </div>
+        <div class="center-f">
+          <div id="indexbtn"><img src="images/sevenstars-logo.png"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 主页面 -->
+  <div class="content-main-class" id="maincontent-id">
+    <div class="center">
+      <div class="htitle">
+        <div class="logo" id="indexlogo"><img></div>
+        <div class="backstarts"><img src="images/bank-stars.png"></div>
+<!--        <div class="study"><a target="iframe-name" id="study"><img></a></div>-->
+      </div>
+      <!-- 商业中心 -->
+      <div class="inlistall">
+        <!-- 圆形进度 -->
+        <div class="layout" id="business">
+          <div  class="layoutbox">
+            <div class="indicatorContainer" id="indicatorContainer1"></div>
+            <div class="layoutcon">
+              <p class="title"></p>
+              <p class="target tcenten1"><i class="trade-name"></i><i class="trade-i"></i></p>
+              <div class="target tcenten2"><i class="order-name"></i><i class="order-i"></i></div>
+              <p class="target finish tcenten3"><i class="finish-name"></i><i class="finish-i"></i></p>
+            </div>
+            <!-- <div id="box">AAA</div> -->
+          </div>
+        </div>
+   
+        <ul class="sylist">
+          <li class="content-one">
+            <div class="col-md-8 col-xs-8 col-sm-8">
+              <span class="titneme1">
+                <div class="titText" id="learnCenter"></div>
+              </span>
+              <span class="arrText"><i></i></span>
+            </div>
+            <div class="parent-div col-md-4 col-xs-4 col-sm-4">
+              <img alt=".." class="xiaotubiao">
+            </div>
+          </li>
+          <li class="content-one">
+            <div class="col-md-8 col-xs-8 col-sm-8">
+              <span class="titneme1">
+                <div class="titText" id="commandCentre"></div>
+              </span>
+              <span class="arrText"><i></i></span>
+            </div>
+            <div class="parent-div col-md-4 col-xs-4 col-sm-4">
+              <img alt=".." class="xiaotubiao">
+            </div>
+          </li>
+          <li class="content-one">
+            <div class="col-md-8 col-xs-8 col-sm-8">
+              <span class="titneme1">
+                <div class="titText" id="spacetimeCenter"></div>
+              </span>
+              <span class="arrText"><i></i></span>
+            </div>
+            <div class="parent-div col-md-4 col-xs-4 col-sm-4">
+              <img alt=".." class="xiaotubiao">
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="inlistall">
+        <!-- 圆形进度 -->
+        <div class="layout" id="totalcontrol">
+          <div  class="layoutbox">
+            <div class="indicatorContainer" id="indicatorContainer2"></div>
+            <div class="layoutcon">
+              <p class="title"></p>
+              <p class="target tcenten1"><i class="trade-name"></i><i class="trade-i"></i></p>
+              <div class="target tcenten2"><i class="order-name"></i><i class="order-i"></i></div>
+              <p class="target finish tcenten3"><i class="finish-name"></i><i class="finish-i"></i></p>
+            </div>
+            <!-- <div id="box">AAA</div> -->
+          </div>
+        </div>
+   
+        <ul class="sylist">
+          <li class="content-one">
+            <div class="col-md-8 col-xs-8 col-sm-8">
+              <span class="titneme1">
+                <div class="titText" id="col2line1"></div>
+              </span>
+              <span class="arrText"><i></i></span>
+            </div>
+            <div class="parent-div col-md-4 col-xs-4 col-sm-4">
+              <img alt=".." class="xiaotubiao">
+            </div>
+          </li>
+          <li class="content-one">
+            <div class="col-md-8 col-xs-8 col-sm-8">
+              <span class="titneme1">
+                <div class="titText" id="col2line2"></div>
+              </span>
+              <span class="arrText"><i></i></span>
+            </div>
+            <div class="parent-div col-md-4 col-xs-4 col-sm-4">
+              <img alt=".." class="xiaotubiao">
+            </div>
+          </li>
+          <li class="content-one">
+            <div class="col-md-8 col-xs-8 col-sm-8">
+              <span class="titneme1">
+                <div class="titText" id="col2line3"></div>
+              </span>
+              <span class="arrText"><i></i></span>
+            </div>
+            <div class="parent-div col-md-4 col-xs-4 col-sm-4">
+              <img alt=".." class="xiaotubiao">
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="inlistall">
+        <!-- 圆形进度 -->
+        <div class="layout" id="space-time">
+          <div  class="layoutbox">
+            <div class="indicatorContainer" id="indicatorContainer3"></div>
+            <div class="layoutcon">
+              <p class="title"></p>
+              <p class="target tcenten1"><i class="trade-name"></i><i class="trade-i"></i></p>
+              <div class="target tcenten2"><i class="order-name"></i><i class="order-i"></i></div>
+              <p class="target finish tcenten3"><i class="finish-name"></i><i class="finish-i"></i></p>
+            </div>
+            <!-- <div id="box">AAA</div> -->
+          </div>
+        </div>
+   
+        <ul class="sylist">
+          <li class="content-one">
+            <div class="col-md-8 col-xs-8 col-sm-8">
+              <span class="titneme1">
+                <div class="titText" id="huinengqi"></div>
+              </span>
+              <span class="arrText"><i></i></span>
+            </div>
+            <div class="parent-div col-md-4 col-xs-4 col-sm-4" id="parent-div-one">
+              <img alt=".." class="xiaotubiao" id="children-img-one">
+            </div>
+          </li>
+          <li class="content-one">
+            <div class="col-md-8 col-xs-8 col-sm-8">
+              <span class="titneme1">
+                <div class="titText" id="junengqi"></div>
+              </span>
+              <span class="arrText"><i></i></span>
+            </div>
+            <div class="parent-div col-md-4 col-xs-4 col-sm-4" id="parent-div-one">
+              <img alt=".." class="xiaotubiao" id="children-img-one">
+            </div>
+          </li>
+          <li class="content-one">
+            <div class="col-md-8 col-xs-8 col-sm-8">
+              <span class="titneme1">
+                <div class="titText" id="funengqi"></div>
+              </span>
+              <span class="arrText"><i></i></span>
+            </div>
+            <div class="parent-div col-md-4 col-xs-4 col-sm-4" id="parent-div-one">
+              <img alt=".." class="xiaotubiao" id="children-img-one">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  <div class="wuqianx nopermission" style="display: none;">
+    <span class="wuqianx-icon"><img src="images/wuqianx.png"></span><span>无权限访问</span>
+  </div>
+  <div class="wuqianx uncultivated" style="display: none;">
+    <span class="wuqianx-icon"><img src="images/wuqianx.png"></span><span>此功能未开放</span>
+  </div>
+  <script src="libs/crypto/aes.js"></script>
+  <script src="libs/crypto/mode-ecb-min.js"></script>
+  <script src="libs/crypto/pad-nopadding-min.js"></script>
+  <script src="js/radialIndicator/radialIndicator.min.js"></script>
+  <script src="js/radialIndicator/changeNumberTime.js"></script>
+  <script src="js/public-url.js"></script>
+  <script src="js/alert.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/dot.js"></script>
+  <script>
+    (function(){
+      /*首次加载才会有图片点击*/
+      var loginconcent = storage.getItem("loginconcent");  //登录页面点击小圆点主页存储标识
+      var entrance = JSON.parse(storage.getItem("enterall"+localast)).entranceType;
+      childenterpriseCode = JSON.parse(storage.getItem("userData"+localast)).childenterpriseCode;
+      $("#infooter").css("display","none");
+      if(entrance=="weilianbao" || entrance=="weilianwa"){
+        $("#servenstars").css("display","none");
+        $("#dropImg").css("display","block");
+        $("#maincontent-id").css("display","block");
+        $(".text-center li:eq(1)").hide();
+        $(".backstarts").hide();
+      }else if(childenterpriseCode!== ""){
+        $("#servenstars").css("display","block");
+        $("#dropImg").css("display","none");
+        $("#maincontent-id").css("display","none");
+        $("#indexBody").css("background-color","#0a0e13");
+        $(".text-center li:eq(1)").show();
+        $(".backstarts").show();
+        setTimeout(function(){
+          $("#servenstars").css("display","none");
+          $("#dropImg").css("display","block");
+          $("#maincontent-id").css("display","block");
+          $("#indexBody").css("background-color","rgb(47, 56, 67")
+        },1000);
+      }else if(loginconcent){
+        $("#servenstars").css("display","none");
+        $("#dropImg").css("display","block");
+        $("#maincontent-id").css("display","block");
+      }else {
+        $("#servenstars").css("display","block");
+        $("#dropImg").css("display","none");
+        $("#maincontent-id").css("display","none");
+        $("#infooter").css("display","none");
+      }
+        $("#starsbtn").click(function() {
+          $("#servenstars").css("display","block");
+          $("#maincontent-id").css("display","none");
+          $("#indexBody").css("background-color","#0a0e13");
+        });
+        
+        $("#indexbtn").click(function(){
+          $("#indexBody").css("background-color","#2f3843");
+        });
+    })();
+  </script>
+  <script>
+  function myDrag (element) {
+  element[0].ondragstart=function () {  //很多浏览器中默认允许拖动图片到新标签页打开，要先禁止，否则影响效果。如果你要拖动的不是图片，可以去掉
+    return false;
+  }
+  $(document)[0].onselectstart=function () {  //如果要拖动的元素可以选中内容，则有必要禁止选中。考虑到鼠标移出元素的情况，需要设置在document上。不过这条在火狐上是无效的
+    return false;
+  }
+  element.mousedown(function (event) {
+    element.css("cursor","move");
+    var ev=event||window.event;
+
+    //保存拖动开始时的left和top值
+    var oldLeft=parseInt(element.css("left"));  
+    var oldTop=parseInt(element.css("top"));
+
+    //保存拖动开始时的鼠标坐标值
+    var oldX=ev.clientX;
+    var oldY=ev.clientY;
+
+    //设置元素接触到右边界和底边界时的left和top值
+    var maxLeft=$(window).width()-element.width();  
+    var maxTop=$(window).height()-element.height();
+    //获取窗口宽高可以用window.innerWidth和window.innerHeight，但是包含滚动条的宽高，所以改成了jq的方法。
+
+    $(document).mousemove(function (event) {  
+    //如果拖动速度过快的话，可能会发生元素移动跟不上鼠标的情况。如果绑定在元素上，此时事件就结束了。如果绑定在document上，拖动可以继续，而且元素的位置更新之后会恢复到正确的位置上(即追上鼠标)。
+      var ev=event||window.event;
+
+      element.css("left",oldLeft+ev.clientX-oldX+"px");
+      element.css("top",oldTop+ev.clientY-oldY+"px");
+      
+      //限制边界开始
+      if (oldLeft+ev.clientX-oldX<0) {  //左边界
+        element.css("left","0px");
+        resetDrag ();
+      };
+      if (oldLeft+ev.clientX-oldX>maxLeft) {//右边界
+        element.css("left",maxLeft+"px");
+        resetDrag ();
+      };
+      if (oldTop+ev.clientY-oldY<0) {   //上边界
+        element.css("top","0px");
+        resetDrag ();
+      };
+      if (oldTop+ev.clientY-oldY>maxTop) {  //下边界
+        element.css("top",maxTop+"px");
+        resetDrag ();
+      };
+      
+      function resetDrag () {   //更新保存运算过程中的保存的一些值
+        oldLeft=parseInt(element.css("left"));
+        oldTop=parseInt(element.css("top"));
+        oldX=ev.clientX;
+        oldY=ev.clientY;
+      }
+      //如果在限制情况发生时不更新上面的这些值，那么之后设置left、top时会出现异常。例如：当图片左侧到了左边界之后，继续向左拖动了100px（当然left被锁定在0px了）。之后你再向右拖动，需要先向右100px之后图片才开始脱离左边界。因为这种情况下不重设的话，“oldLeft+ev.clientX-oldX”计算出来的值是一直在变大的（或自增或自减）。
+      //限制边界结束
+    });
+  }); 
+
+    $("body").mouseup(function () {
+      $(document).unbind("mousemove");
+      element.css("cursor","default");
+      $(document)[0].onselectstart=function () {
+        return true;
+      }
+    });
+}
+$(function  () {
+  myDrag($('#dropIcon'));
+});
+  </script>
+  <script>
+      $(document).bind("keydown",function(e){   
+        e=window.event||e;
+        if(e.keyCode==116){
+        e.keyCode = 0;
+        return false; //屏蔽F5刷新键   
+        }
+     });
+  </script>
+ <!-- 七星页面js -->
+ <script>
+
+</script>
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1"/>
+	<title>登录页面</title>
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/login.css">
+</head>
+<body class="login-body" id="loginBody">
+
+<!-- 	<div class="kaijitupian-one-class" id="kaijitupian-one-id">
+	<img src="images/2.jpg" alt="..">
+</div> -->
+  <iframe frameborder="0" name="login-name" style="display: none;width: 100%; height:798px;" scrolling="auto" allowfullscreen="true" allowtransparency="true" id="loginDom"></iframe>
+	<div id="dropIcon" draggable="true">
+		<!-- 小圆点注釋 -->
+		<div id="dropImg" style="display:block;"><img src="images/nav.png" ></div>
+		<div class="first-menu" id="firstMenu" style="opacity: 0.8;">
+			<div class="icon-default">
+				<ul class="text-center">
+					<li>
+						<a onclick="javascript:logingoback()"><img src="images/icon/back.png" class="center-block"></a>
+						<a onclick="javascript:logingoback()">后退</a>
+					</li>
+					<li>
+						<a onclick="javascript:loginhome()"><img src="images/icon/home.png" class="center-block"></a>
+						<a onclick="javascript:loginhome()">主页</a>
+					</li>
+					<li>
+						<a onclick="javascript:logingoforward()"><img src="images/icon/forward.png" class="center-block"></a>
+						<a onclick="javascript:logingoforward()">向前</a>
+					</li>
+					<li>
+						<a onclick="javascript:loginsearch(0)"><img src="images/icon/search.png" class="center-block"></a>
+						<a onclick="javascript:loginsearch(0)">搜索</a>
+					</li>
+					<li>
+						<a onclick="javascript:loginsearch(1)"><img src="images/icon/personal-center.png" class="center-block"></a>
+						<a onclick="javascript:loginsearch(1)">我的</a>
+					</li>
+					<li>
+						<a onclick="javascript:loginsearch(2)"><img src="images/icon/message.png" class="center-block"></a>
+						<a onclick="javascript:loginsearch(2)">消息</a>
+					</li>
+					<li>
+						<a onclick="javascript:loginlogin()"><img src="images/icon/login.png" class="center-block"></a>
+						<a onclick="javascript:loginlogin()">登录</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+  <div id="transitionpage" class="transitionpage"></div>
+  <div class="authority" id="authority" style="display: none;">
+	  <div class="authoribox">
+  		<div class="authoritylist">
+  			<div class="col-md-3 col-xs-3 col-sm-3 boxlist authorpas" id="author-password">
+  				<img src="images/author-password.png">
+  			</div>
+  			<div class="col-md-3 col-xs-3 col-sm-3 boxlist">
+  				<img src="images/author-voice.png">
+  			</div>
+  			<div class="col-md-3 col-xs-3 col-sm-3 boxlist">
+  				<img src="images/author-fingerprint.png">
+  			</div>
+  			<div class="col-md-3 col-xs-3 col-sm-3 boxlist">
+  				<img src="images/author-face.png">
+  			</div>
+  		</div>
+  		<div class="line"></div>
+  		<div class="login-car">
+<!--  		  <a id="officialwebsite" target="_blank"><img src="images/officialwebsite.png" alt=".."></a>
+  		  <a id="shoppingmall" target="_blank"><img src="images/shoppingmall.png" alt=".."></a>
+        <a id="microchain"><img src="images/microchain.png" alt=".."></a>-->
+				<a data-entrance="weilianhai" class="weilianbtn weilianall" id="weilianhai">微链海</a>
+				<a data-entrance="weilianbao" class="weilianbtn weilianall">微链宝</a>
+				<a data-entrance="weilianwa" class="weilianbtn weilianall">微链娃</a>
+				<div class="weilianbtn officshopp"><a id="officialwebsite" target="login-name">官网</a>|<a id="shoppingmall" target="login-name">商城</a></div>
+  		</div>
+  		<img class="authori-img" id="authori-img" >
+		</div>
+  </div>
+  <div id="login-body-id">
+	  <div class="container-fluid">
+		  <div class="row">
+		    <div class="col-md-12 col-xs-12 col-sm-12">
+		      <div class="login-body-logo">
+		        <img id="loginlogo" alt=".." class="xiangpu">
+		      </div>
+		    </div>
+		  </div>
+	  </div>
+	  <div class="wrapbj">
+			<div class="container-fluid">
+			  <div class="loginbox">
+			  	<h3>账号登录</h3>
+					<div class="listbox">
+						<input type="text" class="account-input" placeholder="输入手机号/邮箱/账户名" id="account">
+						<img src="images/login-zhanghao.png" alt=".." class="account-img">
+					</div>
+					<div class="listbox">
+						<input type="password" class="password-input" placeholder="输入密码" id="password">
+						<img src="images/login-password.png" alt=".." class="password-img">
+					</div>
+					<div class="listbox">
+						<button type="submit" class="btn btn-default" id="btn"><span class="login-text">登&nbsp;&nbsp;录</span></button>
+						<div class="abtn">
+							<p class="remember"><input name="remember" checked id="rmbUser" type="checkbox">记住密码</p>
+							<a class="zhuce" id="register" target="login-name" >用户注册</a>
+							<a class="zhuce forgotpas" id="forgotpas" target="login-name" >忘记密码</a>
+						</div>
+					</div>
+	      </div>
+				<a class="bank-authentication"><img src="images/bank-authentication.png"></a>
+			</div>
+		</div>
+	</div>
+	<footer style="margin-top:0;display: none" id="footer">
+		<div class="col-md-12 col-xs-12 col-sm-12">
+			<div class="text-center">
+				<span>版权所有&copy;象翌微链科技发展有限公司&nbsp;桂ICP备1300904号</span>
+			</div>
+		</div>
+	</footer>
+	<script src="libs/jquery.min.js"></script>
+	<script src="libs/crypto/aes.js"></script>
+	<script src="libs/crypto/mode-ecb-min.js"></script>
+	<script src="libs/crypto/pad-nopadding-min.js"></script>
+	<script src="js/public-url.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/md5.min.js"></script>
+	<script src="js/alert.js"></script>
+	<script src="js/login.js?v=201802031500"></script>
+  <script src="js/dot.js"></script>
+	<script>
+		(function(){
+			/*首次加载才会有图片点击*/
+      //$("#dropIcon").css("display","none");
+     $(window.parent.document.getElementById('dropIcon')).hide();
+			var sessionStorage = window.sessionStorage;
+			var openNum = sessionStorage.getItem("openNum");
+//       if(!isNull(openNum)) { 
+//         /*$("#kaijitupian-one-id").css("display","none");*/
+//         $("#transitionpage").css("display","block");
+//         $("#authority").css("display","none");
+//         $("#loginBody").css({"background-color":"#0a0e13"});
+//         setTimeout(function(){//定时器
+//             $("#transitionpage").css("display","none");//将图片的display属性设置为none
+//             $("#authority").css("display","block");
+//             $("#loginBody").css({"background-color":"#870d03"});
+//           },
+//           3000);
+//         $("#login-body-id").css("display","none");
+//         $("#footer").css("display","none");
+// /*        $("#loginBody").css({"background-color":"#870d03","background-image":"url(images/authority-bg.png) center",
+//          "background-repeat":"no-repeat"});*/
+//       } else {
+				/*$("#kaijitupian-one-id").css("display","block");*/
+				$("#transitionpage").css("display","block");
+        $("#authority").css("display","none");
+        $("#loginBody").css({"background-color":"#0a0e13"});
+        setTimeout(function(){//定时器
+            $("#transitionpage").css("display","none");//将图片的display属性设置为none
+            $("#authority").css("display","block");
+            $("#loginBody").css({"background-color":"#870d03"});
+          },
+          3000);
+        $("#footer").css("display","none");
+        $("#login-body-id").css("display","none");
+			// }
+			
+
+      $("#author-password").click(function() {
+        if($(".weilianall").hasClass("flag")){
+          $("#login-body-id").css("display","block");
+          $("#footer").css("display","block");
+          $("#authority").css("display","none");
+          $("#loginBody").css({"background-color":"#fff","background-image":"none", "background-repeat":"no-repeat"});
+				}else {
+          Alert.show("请选择空间入口");
+				}
+      });
+      $(".weilianall").click(function() {
+				if($(this).hasClass('flag')){
+          $(this).removeClass('flag');
+        }else {
+          $(this).addClass("flag").siblings().removeClass('flag');
+        };
+				if(!isNull(JSON.parse(storage.getItem("enterall"+localast)))){
+          var entranceTypemsg = JSON.parse(storage.getItem("enterall"+localast));
+          entranceTypemsg.entranceType = $(this).attr("data-entrance");
+          storage.setItem("enterall"+localast,JSON.stringify(entranceTypemsg));
+				}else {
+          location.reload();
+        }
+/*        var entranceTypemsg = JSON.parse(storage.getItem("enterall"+localast));
+        entranceTypemsg.entranceType = $(this).attr("data-entrance");
+        storage.setItem("enterall"+localast,JSON.stringify(entranceTypemsg));*/
+				//window.localStorage.setItem('entranceType',$(this).attr("data-entrance"))
+      });
+			var storage = window.localStorage;
+			if (storage.getItem('sessionId') !== null) {
+				$("#account").val(storage.getItem('account'));  
+				$("#password").val("********");
+				setTimeout(function() {
+					location.href = "index.html";
+				},1500);
+			}
+		})();
+		$("#dropIcon").css("display","none");
+/*var storage = window.localStorage;
+$("#account").val(storage.setItem('account', " "));
+$("#password").val(storage.setItem('password', " "));*/
+</script>
+<script>
+  function myDrag (element) {
+
+    element[0].ondragstart=function () {  //很多浏览器中默认允许拖动图片到新标签页打开，要先禁止，否则影响效果。如果你要拖动的不是图片，可以去掉
+      return false;
+    }
+
+    $(document)[0].onselectstart=function () {  //如果要拖动的元素可以选中内容，则有必要禁止选中。考虑到鼠标移出元素的情况，需要设置在document上。不过这条在火狐上是无效的
+      return false;
+    }
+
+    element.mousedown(function (event) {
+      element.css("cursor","move");
+      var ev=event||window.event;
+
+      //保存拖动开始时的left和top值
+      var oldLeft=parseInt(element.css("left"));
+      var oldTop=parseInt(element.css("top"));
+
+      //保存拖动开始时的鼠标坐标值
+      var oldX=ev.clientX;
+      var oldY=ev.clientY;
+
+      //设置元素接触到右边界和底边界时的left和top值
+      var maxLeft=$(window).width()-element.width();
+      var maxTop=$(window).height()-element.height();
+      //获取窗口宽高可以用window.innerWidth和window.innerHeight，但是包含滚动条的宽高，所以改成了jq的方法。
+
+      $(document).mousemove(function (event) {
+        //如果拖动速度过快的话，可能会发生元素移动跟不上鼠标的情况。如果绑定在元素上，此时事件就结束了。如果绑定在document上，拖动可以继续，而且元素的位置更新之后会恢复到正确的位置上(即追上鼠标)。
+        var ev=event||window.event;
+
+        element.css("left",oldLeft+ev.clientX-oldX+"px");
+        element.css("top",oldTop+ev.clientY-oldY+"px");
+
+        //限制边界开始
+        if (oldLeft+ev.clientX-oldX<0) {  //左边界
+          element.css("left","0px");
+          resetDrag ();
+        };
+        if (oldLeft+ev.clientX-oldX>maxLeft) {//右边界
+          element.css("left",maxLeft+"px");
+          resetDrag ();
+        };
+        if (oldTop+ev.clientY-oldY<0) {   //上边界
+          element.css("top","0px");
+          resetDrag ();
+        };
+        if (oldTop+ev.clientY-oldY>maxTop) {  //下边界
+          element.css("top",maxTop+"px");
+          resetDrag ();
+        };
+
+        function resetDrag () {   //更新保存运算过程中的保存的一些值
+          oldLeft=parseInt(element.css("left"));
+          oldTop=parseInt(element.css("top"));
+          oldX=ev.clientX;
+          oldY=ev.clientY;
+        }
+        //如果在限制情况发生时不更新上面的这些值，那么之后设置left、top时会出现异常。例如：当图片左侧到了左边界之后，继续向左拖动了100px（当然left被锁定在0px了）。之后你再向右拖动，需要先向右100px之后图片才开始脱离左边界。因为这种情况下不重设的话，“oldLeft+ev.clientX-oldX”计算出来的值是一直在变大的（或自增或自减）。
+        //限制边界结束
+      });
+    });
+
+    $("body").mouseup(function () {
+      $(document).unbind("mousemove");
+      element.css("cursor","default");
+      $(document)[0].onselectstart=function () {
+        return true;
+      }
+    });
+  }
+  $(function  () {
+    myDrag($('#dropIcon'));
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>忘记密码</title>
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/forgotpassword.css">
+</head>
+
+<body class="forgot-body" id="forgotBody">
+    <div id="forgot-body-id">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-xs-12 col-sm-12">
+                    <div class="forgot-body-logo">
+                        <img id="loginlogo" alt=".." class="xiangpu">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapbj">
+            <div class="container-fluid">
+                <div class="forgotbox forgotbox1">
+                    <!--<div class="prompt"><p></p></div>-->
+                    <div class="prompt"></div>
+                    <div class="listbox">
+                        <laber>账 户：</laber>
+                        <p class="phoneEmail"></p>
+                    </div>
+                    <div class="listbox">
+                        <!--				<input type="password" class="password-input" placeholder="请输入验证码">
+						<img src="images/login-password.png" alt=".." class="password-img">-->
+
+                        <input type="text" class="verificationcode phonecode" placeholder="请输入验证码">
+                        <div class="code-image phonecode-image">
+                            <i class="timeEnd">60s后重新获取</i>
+                        </div>
+
+                    </div>
+                    <div class="listbox">
+                        <input type="password" class="account-input firstPsd" placeholder="输入新密码" id="forgot-pas1">
+                        <img src="images/login-password.png" alt=".." class="account-img">
+                    </div>
+                    <div class="listbox">
+                        <input type="password" class="account-input CopyPsd" placeholder="输入确认新密码" id="forgot-pas2">
+                        <img src="images/login-password.png" alt=".." class="account-img">
+                    </div>
+                    <div class="listbox">
+                        <a class="btn btn-default" id="next2">
+                            <span class="login-text">确认</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="forgot2-bank" onclick="javascript:history.go(-1);">
+                    <img src="images/forgot-bank.png" alt="..">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="margin-top:0;" id="footer">
+        <div class="col-md-12 col-xs-12 col-sm-12">
+            <div class="text-center">
+                <span>版权所有&copy;象翌微链科技发展有限公司&nbsp;桂ICP备1300904号</span>
+            </div>
+        </div>
+    </footer>
+    <div class="wuqianximg" style="display: none"></div>
+    <div class="wuqianx" style="display: none">
+        <h3>系统提示</h3>
+        <p></p>
+        <div class="errorbtn" id="errorbtn">确认</div>
+    </div>
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/crypto/aes.js"></script>
+    <script src="libs/crypto/mode-ecb-min.js"></script>
+    <script src="libs/crypto/pad-nopadding-min.js"></script>
+    <script src="js/public-url.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/md5.min.js"></script>
+    <script src="js/alert.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/login.js"></script>
+
+    <script>
+        $(function () {
+            //提示框关闭
+            var loginLogo = JSON.parse(storage.getItem("authentication" + localast)).loginlogo;
+            $("#loginlogo").attr("src", loginLogo);
+            $("#errorbtn").click(function () {
+                $(".wuqianximg").css("display", "none");
+                $(".wuqianx").css("display", "none");
+            })
+            function getQueryString(key) {
+
+                var search = location.search.slice(1);
+
+                var searchArr = search.split('&');
+
+                var tempArr = null;
+
+                var searchObj = {};
+
+
+                for (var i = 0, len = searchArr.length; i < len; i++) {
+
+                    tempArr = searchArr[i].split('=');
+
+                    searchObj[tempArr[0]] = tempArr[1];
+
+                }
+
+                return arguments.length ? searchObj[key] : searchObj;
+
+            }
+            var params = getQueryString();
+            $('.phoneEmail').html(params.phoneEmail);
+            var timeEnd = null;
+            var inialNum = $('.timeEnd').html().slice(0, 2);
+            timeEnd = setInterval(function () {
+
+                inialNum--;
+                $('.timeEnd').html(inialNum + 's后重新获取');
+                if (inialNum <= 0) {
+                    clearInterval(timeEnd);
+                    $('.timeEnd').html('重新获取验证码');
+                    $('.code-image').addClass('timeEndSunccess').addClass('setChange');
+                }
+            }, 1000);
+            $('.code-image').on('click', function () {
+                if ($(this).hasClass('timeEndSunccess')) {
+                    $(this).removeClass('timeEndSunccess').removeClass("setChange");
+                    if (params.phoneEmail.indexOf('@') > -1) {
+                        var urlMinddle = "/account_auth_admin/personal-api.findPasswordStepOneCode";
+                        var sendData = {
+                            email: params.phoneEmail,
+                            enterpriseCode: params.enterpriseCode,
+                            clientIp: params.clientIp,
+                            appCode: params.appCode,
+                            prefix: params.prefix
+                        };
+                    } else {
+                        var urlMinddle = "/account_auth_admin/personal-api.findPasswordStepOne"; /*修改密码*/
+                        var sendData = {
+                            mobile: params.phoneEmail,
+                            enterpriseCode: params.enterpriseCode,
+                            clientIp: params.clientIp,
+                            appCode: params.appCode,
+                            prefix: params.prefix
+                        }
+                    }
+
+                    $.ajax({
+                        type: "POST",
+                        data: JSON.stringify(sendData),
+                        url: urlMinddle,
+                        async: false,
+                        contentType: 'application/json; charset=utf-8',
+                        dataType: "json",
+                        success: function (data) {
+                            if (data.status == 2 && data.data == null) {
+                                // 防止 请求结果没数据；
+                                $('.code-image').addClass('timeEndSunccess');
+                                //return alert(data.message);
+                                $(".wuqianx p").html(data.message);
+                                $(".wuqianximg").css("display", "block");
+                                $(".wuqianx").css("display", "block");
+                            } else if (data.status == 1 && data.data != null) {
+                                $('.timeEnd').html('60s后重新获取');
+                                var inialNum = $('.timeEnd').html().slice(0, 2);
+                                timeEnd = setInterval(function () {
+                                    inialNum--;
+                                    $('.timeEnd').html(inialNum + 's后重新获取');
+                                    if (inialNum <= 0) {
+                                        clearInterval(timeEnd);
+                                        $('.timeEnd').html('重新获取验证码');
+                                        $('.code-image').addClass('timeEndSunccess').addClass("setChange");
+                                    }
+                                }, 1000);
+                            }
+
+                        }
+                    })
+
+                }
+            });
+
+            $('#next2').on('click', function () {
+                var self = $(this);
+                if (!$('.verificationcode').val().trim()) {
+                    $(".wuqianx p").html('验证码不能为空');
+                    $(".wuqianximg").css("display", "block");
+                    $(".wuqianx").css("display", "block");
+                    return false;
+                }
+                if (!$('.firstPsd').val().trim()) {
+                    $(".wuqianx p").html('确认密码不能为空');
+                    $(".wuqianximg").css("display", "block");
+                    $(".wuqianx").css("display", "block");
+                    return false;
+                }
+                if (!$('.CopyPsd').val().trim()) {
+                    $(".wuqianx p").html('确认密码不能为空');
+                    $(".wuqianximg").css("display", "block");
+                    $(".wuqianx").css("display", "block");
+                    return false;
+                }
+                if ($('.firstPsd').val() !== $('.CopyPsd').val()) {
+                    //alert('两次输入的密码不一样请重新输入');
+
+                    $(".wuqianx p").html('两次密码输入不一致，请重新输入密码');
+                    $(".wuqianximg").css("display", "block");
+                    $(".wuqianx").css("display", "block");
+                    return false;
+                }
+                if (params.phoneEmail.indexOf('@') > -1) {
+                    var sendParams = {
+                        sessionId: params.data,
+                        email: params.phoneEmail,
+                        code: $('.verificationcode').val(),
+                        newPassword: md5($('.CopyPsd').val())
+                    };
+                }
+                else {
+                    var sendParams = {
+                        sessionId: params.data,
+                        mobile: params.phoneEmail,
+                        code: $('.verificationcode').val(),
+                        newPassword: md5($('.CopyPsd').val())
+                    };
+                }
+                var urlMinddleStep3 = "/account_auth_admin/personal-api.findPasswordStepTwo"; /*修改密码*/
+                $.ajax({
+                    type: "POST",
+                    data: JSON.stringify(sendParams),
+                    url: urlMinddleStep3,
+                    async: false,
+                    contentType: 'application/json; charset=utf-8',
+                    dataType: "json",
+                    success: function (data) {
+                        if (data.status == 2) {
+                            //alert("成功能了2");
+                            $(".wuqianx p").html(data.message);
+                            $(".wuqianximg").css("display", "block");
+                            $(".wuqianx").css("display", "block");
+                            //return alert(data.message+"llll");
+                        } else if (data.status == 1) {//通过状态判断 如果data.status == 1修改成功
+                            //alert("成功能了3");
+                            var accountMsg;
+                            if (window.localStorage.getItem('REMEMBER_ACCOUNT_MSG' + localast)) {
+                                accountMsg = window.localStorage.getItem('REMEMBER_ACCOUNT_MSG' + localast) || '';
+                            }
+                            storage.clear();
+                            window.localStorage.setItem('REMEMBER_ACCOUNT_MSG' + localast, accountMsg || '');
+                            self.attr("href", "login.html");
+                        }
+                    }
+                })
+            });
+        })
+
+//        sessionId
+//        mobile
+//        code
+//        newPassword
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1"/>
+	<title>编辑头像</title>
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/upload-avatar.css">
+</head>
+<body class="upload-avatar-body">
+<!-- 	<nav class="navbar-zdy">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 col-xs-12 col-sm-12">
+				<div class="logo">
+					<img src="images/logo-small.png" alt=".." class="xiangpu">
+					<img src="images/头像@3x.png" alt=".." id="touxiang-id" class="pull-right touxiang">
+				</div>
+				悬停效果
+				<input type="hidden" id="pagex" />
+				<input type="hidden" id="pagey" />
+				<div class="blockdiv" id="blockdiv">
+					<div class="text-center table-box">
+						<a href="personal-center.html">个人中心</a>
+						<hr/>
+						<a id="loginout">安全退出</a>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>  
+</nav> -->
+	
+  <div class="container-fluid">
+	  <div class="row">
+	    <div class="col-md-12 col-xs-12 col-sm-12">
+	      <div class="upload-avatar-body-logo">
+	        <img src="images/logo-red.png" alt=".." class="xiangpu">
+	      </div>
+	    </div>
+	  </div>
+  </div>
+  <div class="title">
+  	<div class="container-fluid">
+  		<h4>编辑头像</h4>
+  	</div>
+  </div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-offset-2 col-xs-offset-2 col-sm-offset-2 col-md-8 col-xs-8 col-sm-8">
+				<div class="content">
+					<div class="col-md-8 col-xs-8 col-sm-8">
+						<div class="left-div"><span class="left-text">仅支持JPG、GIF、PNG图片文件,且文件小于5M</span></div>	
+						<div class="content-left" id="box">
+							<input type="button" id="browse">
+							<img src="images/personal-center/编辑头像.png" alt=".." class="center-block" id="editImg">
+							<div class="text-center"><h5>拖拽图片至此区域预览头像,点击保存进行上传</h5></div>
+						</div>
+					</div>
+					<div class="col-md-4 col-xs-4 col-sm-4">
+						<span class="right-text">上传的头像会自动生成为三种尺寸</span>
+						<div>
+							<img src="images/头像@3x.png" alt=".." class="large-image" id="largeImage">
+							<span class="large-text">大尺寸140*140像素</span>
+						</div>
+						<div>
+							<img src="images/头像@3x.png" alt=".." class="middle-image" id="middleImage">
+							<span class="middle-text">中尺寸100*100像素</span>
+						</div>
+						<div>
+							<img src="images/头像@3x.png" alt=".." class="small-image" id="smallImage">
+							<span class="small-text">小尺寸60*60像素</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 col-xs-12 col-sm-12">
+							<button class="btn-default" id="start_upload"><span class="save-text">保&nbsp;存</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="col-md-12 col-xs-12 col-sm-12">
+			<div class="text-center">
+				<span>版权所有&copy;象翌微链科技发展有限公司&nbsp;桂ICP备1300904号</span>
+			</div>
+		</div>
+	</footer>
+	<script src="libs/jquery.min.js"></script>
+	<script src="js/alert.js"></script>
+  <script src="js/public-url.js"></script>
+	<script src="js/common.js"></script>
+	<script src="libs/plupload/plupload.full.min.js"></script>
+	<script src="libs/plupload/moxie.min.js"></script>
+	<script src="libs/plupload/upload-avatar.js"></script>
+</body>
+</html>

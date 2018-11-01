@@ -1,0 +1,63 @@
+﻿{
+  "config": {
+     "confignName":"象谱0.5版本小黄点配置",
+     "version": "1.0",
+     "updateTime": "2017-04-27",
+     "describe":"根据类别添加Iitem，如CommandCenter代表指挥中心",
+     "pcDefault":{
+         "name":"pcDefalut",
+         "type":"channel",
+         "buttons":[    
+             {
+                 "icon":"search",
+                 "title":"搜索",
+                 "type":"url",
+                 "sub":"http://suneee.dcp.weilian.cn/sunEee-fu/view/dataform.html"
+             },
+             {
+                "icon":"personal-center",
+                "title":"我的",
+                "type":"url",
+                "sub":"personal-center.html"
+             },
+             {
+                "icon":"message",
+                "title":"消息",
+                "type":"url",
+                "sub":"personal-center-news.html"
+             },
+             {
+                "icon":"login",
+                "title":"登录",
+                "type":"url",
+                "sub":"login.html"
+             },
+             {
+                "icon":"customerservice",
+                "title":"客满",
+                "type":"url",
+                "sub":"http://suneee.oa.weilian.cn"
+             },
+             {
+               "icon":"weilianhai",
+               "title":"微链海",
+               "type":"url",
+               "sub":""
+             },
+             {
+               "icon":"weilianbao",
+               "title":"微链宝",
+               "type":"url",
+               "sub":""
+             },
+             {
+               "icon":"weilianwa",
+               "title":"微链娃",
+               "type":"url",
+               "sub":""
+             }
+         ]
+     }
+         
+  }
+}

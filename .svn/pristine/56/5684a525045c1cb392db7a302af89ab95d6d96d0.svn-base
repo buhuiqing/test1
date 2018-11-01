@@ -1,0 +1,210 @@
+.personal-center-setup-body {
+	background-color: #fff;
+	min-width: 1100px;
+	font-size: 14px;
+}
+.personal-center-setup-body .personal-center-setup-logo{
+	margin: 80px 0 30px;
+    height: 28px;
+}
+.personal-center-setup-body .title {
+    height: 100px;
+    margin-bottom: 25px;
+    background-color: #004b80;
+}
+.personal-center-setup-body .title h4{
+	height: 100px;
+	padding-left: 100px;
+	line-height: 100px;
+	color: #fff;
+}
+
+ .personal-center-setup-body .wrap {
+	height: 400px;
+	margin-top: 40px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: solid 1px #f1f1f1;
+}
+.personal-center-setup-body .wrap .img-div{
+    height: 65%;
+}
+.personal-center-setup-body .wrap .img-class {
+    padding-top: 85px;
+}
+ .personal-center-setup-body .wrap .tixitext{
+ 	height: 25px;
+ 	line-height: 25px;
+ 	margin-top: 15px;
+	font-size: 18px;
+	letter-spacing: 0.3px;
+	color: #4a4a4a;
+	text-align: center;
+ }
+
+ .personal-center-setup-body .wrap .tixing-btn{
+  width: 80px;
+  height: 30px;
+  margin-left:auto;
+  margin-right: auto;
+
+ }
+ /* 开关样式设置 */
+ .personal-center-setup-body .wrap .on{
+    color:#333;
+}
+ .personal-center-setup-body .wrap .off{
+    color:#eee;
+}
+ .personal-center-setup-body .wrap .circle {
+    position: absolute;
+    display: inline-block;
+}
+
+#radio ~label {
+    background-color: #f1f1f1;
+}
+
+#radio ~label .circle {
+    left: 0;
+    transition: all 0.3s;
+    --webkit-transition: all 0.3s;
+}
+
+#radio ~label .on {
+    display: none;
+}
+
+#radio ~ label .off {
+    display: inline-block;
+}
+
+#radio:checked ~ label {
+    background: #004b80;
+}
+
+#radio:checked ~label .circle {
+    left: 37px;
+}
+#radio:checked ~label .on {
+    display: inline-block;
+}
+
+#radio:checked ~ label .off {
+    display: none;
+}
+
+ .personal-center-setup-body .wrap label {
+    display: inline-block;
+    position: relative;
+    height: 36px;
+    width: 72px;
+    border-top-left-radius: 15px 50%;
+    border-bottom-left-radius: 15px 50%;
+    border-top-right-radius: 15px 50%;
+    border-bottom-right-radius: 15px 50%;
+}
+
+ .personal-center-setup-body .wrap label .circle {
+    display: inline-block;
+    border-radius: 50%;
+    margin-top: 1px;
+    width: 34px;
+    height: 34px;
+	background-color: #ffffff;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.13);
+}
+
+ .personal-center-setup-body .wrap label .text {
+    text-indent: 30px;
+    line-height: 28px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-shadow: 0 0 2px #ddd;
+}
+/*
+.personal-center-setup-body .wrap h4 {
+	font-weight: bold;
+	color: #29323b;
+	margin-left: 25px;
+	margin-top: 25px;
+	font-family: SimHei;
+	padding-top: 20px;
+}
+
+.personal-center-setup-body .wrap hr {
+	width: 95%;
+	margin-left: 25px;
+	border: 1px solid #ccc;
+	border-left-width: 0;
+	border-right-width: 0;
+	border-bottom-width: 0;
+}
+
+.personal-center-setup-body .wrap .sound-text {
+	margin-left: 25px;
+	color: #656c73;
+}
+
+.personal-center-setup-body .wrap .sound-div {
+	width: 95px;
+	height: 45px;
+	border-radius: 5px;
+	background-color: #dadede;
+	margin-top: -30px;
+    margin-left: 108px;
+	position: relative;
+	border:1px solid #ccc;
+}
+
+.personal-center-setup-body .wrap .sound-open {
+    width: 45px;
+    height: 41px;
+    margin-left: 2px;
+    margin-top: 1px;
+    position: absolute;
+    border:none;
+    color: #656c73;
+    border-radius: 5px;
+}
+
+.personal-center-setup-body .wrap .sound-close {
+    width: 45px;
+    height: 41px;
+    position: absolute;
+    margin-left: 47px;
+    margin-top: 1px;
+    border:none;
+    color: #656c73;
+    border-radius: 5px;
+}
+
+.personal-center-setup-body .wrap .btn-save {
+    width: 200px;
+    height: 55px;
+    background-color: #068fe4;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 30px;
+    margin-left: 108px;
+    outline: none;
+    box-shadow: none;
+}
+
+.personal-center-setup-body .wrap .btn-save span {
+	color: #ffffff;
+    font-size: 15px;
+}
+
+.personal-center-setup-body .index-gohome {
+	margin-top:-60px;
+	margin-right:230px;
+	float:right;
+	position: relative;
+}
+ */
+@media (max-width: 1583px) {
+}
+
+@media (max-width: 768px) {
+}

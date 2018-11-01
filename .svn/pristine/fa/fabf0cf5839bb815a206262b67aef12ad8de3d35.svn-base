@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1"/>
+	<title>关于</title>
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/personal-center-about.css">
+</head>
+<body class="personal-center-about-body">
+  <div class="container-fluid">
+	  <div class="row">
+	    <div class="col-md-12 col-xs-12 col-sm-12">
+	      <div class="personal-center-about-logo">
+	        <img src="images/logo-red.png" alt=".." class="xiangpu">
+	      </div>
+	    </div>
+	  </div>
+  </div>
+  <div class="title">
+  	<div class="container-fluid">
+  		<h4>关于</h4>
+  	</div>
+  </div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 col-xs-12 col-sm-12">
+				<div class="wrap">
+					<div id="aboutlogo" ><img alt=".." class="center-block"></div>
+					<p id="versionAbout"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="col-md-12 col-xs-12 col-sm-12">
+			<div class="text-center">
+				<span>版权所有&copy;象翌微链科技发展有限公司&nbsp;桂ICP备1300904号</span>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="libs/jquery.min.js"></script>
+	<script src="js/public-url.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/alert.js"></script>
+	<script type="text/javascript">
+		// 登录页面获取各个不同logo的ajax配置 存储后读取
+    aboutlogo = JSON.parse(storage.getItem("authentication"+localast)).aboutlogo;
+    versionAbout = JSON.parse(storage.getItem("authentication"+localast)).versionAbout;
+		$("#aboutlogo img").attr("src",aboutlogo);
+		$("#versionAbout").html(versionAbout);
+	</script>
+</body>
+</html>

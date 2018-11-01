@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1"/>
+	<title>忘记密码</title>
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/forgotpassword.css">
+</head>
+<body class="forgot-body" id="forgotBody">
+  <div id="forgot-body-id">
+	  <div class="container-fluid">
+		  <div class="row">
+		    <div class="col-md-12 col-xs-12 col-sm-12">
+		      <div class="forgot-body-logo">
+		        <img id="loginlogo" alt=".." class="xiangpu">
+		      </div>
+		    </div>
+		  </div>
+	  </div>
+	  <div class="wrapbj">
+			<div class="container-fluid">
+				<div class="forgotpasone">
+					<a class="phone goTwo" id="forgotphone"><img src="images/forgot-phone.png" alt=".."></a>
+					<a class="mailbox goTwo" id="forgotmailbox"><img src="images/forgot-mailbox.png" alt=".."></a>
+					<div class="forgot-bank" id="banklogin"><img src="images/forgot-bank.png" alt=".."></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer style="margin-top:0; display: block" id="footer1">
+		<div class="col-md-12 col-xs-12 col-sm-12">
+			<div class="text-center">
+				<span>版权所有&copy;象翌微链科技发展有限公司&nbsp;桂ICP备1300904号</span>
+			</div>
+		</div>
+	</footer>
+	<script src="libs/jquery.min.js"></script>
+	<script src="libs/crypto/aes.js"></script>
+	<script src="libs/crypto/mode-ecb-min.js"></script>
+	<script src="libs/crypto/pad-nopadding-min.js"></script>
+	<script src="js/public-url.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/md5.min.js"></script>
+	<script src="js/alert.js"></script>
+	<script src="js/forgotpassword.js"></script>
+</body>
+</html>

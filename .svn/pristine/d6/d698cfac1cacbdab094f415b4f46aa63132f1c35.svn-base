@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1"/>
+	<title>个人资料</title>
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/personal-center-data.css">
+</head>
+<body class="personal-center-data-body" id="centerDataBody">
+<!-- 	<nav class="navbar-zdy">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 col-xs-12 col-sm-12">
+				<div class="logo">
+					<img src="images/logo-small.png" alt=".." class="xiangpu">
+					<img alt=".." id="touxiang-id" class="pull-right touxiang">
+				</div>
+				悬停效果
+				<input type="hidden" id="pagex" />
+				<input type="hidden" id="pagey" />
+				<div class="blockdiv" id="blockdiv">
+					<div class="text-center table-box" draggable>
+						<a href="personal-center.html">个人中心</a>
+						<hr/>
+						<a id="loginout">安全退出</a>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+</nav> -->
+  <div class="container-fluid">
+	  <div class="row">
+	    <div class="col-md-12 col-xs-12 col-sm-12">
+	      <div class="personal-center-data-logo">
+	        <img src="images/logo-red.png" alt=".." class="xiangpu">
+	      </div>
+	    </div>
+	  </div>
+  </div>
+  <div class="title">
+  	<div class="container-fluid">
+  		<h4>个人资料</h4>
+  	</div>
+  </div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-offset-4 col-md-4 col-xs-offset-4 col-xs-4 col-sm-offset-4 com-sm-4 form-edit">
+				<div class="dqtx">
+					<span class="head-text">当前头像:</span>
+					<div class="txparent-div" id="parentDiv">
+						<img alt=".." id="large-touxiang-id">
+						<div class="editimg-bgdiv" id="editimgDiv">
+							<div class="text-center editimg-childrendiv" id="editimgChildrendiv">
+								<a href="upload-avatar.html"><span>编辑头像</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cenrerlist">
+					<span class="nick-text">微链号:</span>
+					<input type="text" readonly="readonly" id="weilianhao-twolevel" class="form-control">
+				</div>
+				<div class="cenrerlist">
+					<span class="nick-text">昵称:</span>
+					<input type="text" id="nick-twolevel" class="form-control">
+				</div>
+
+<!-- 				<div style="margin-top:10px;">
+	<span class="weilianhao-text">微链号:</span>
+	<label id="weilianhao-twolevel"></label>
+</div> -->
+				<div class="cenrerlist">
+					<span class="nick-text">性别:</span>
+					<div class="sex-text">
+					  <label><input type="radio" name="sex" id="man" value="man">男</label>
+					  <label><input type="radio" name="sex" id="woman" value="woman">女</label>
+					</div>
+				</div>
+
+<!-- 				<div style="margin-top:20px;">
+	<span class="sex-text">性别:</span>
+	<div class="sex-div">
+		<input type="button" value="男" id="man" class="man">
+		<input type="button" value="女" id="woman" class="woman">
+	</div>
+</div> -->
+				<div class="autograph">
+					<span class="signature-text">个性签名:</span>
+					<textarea id="signature-twolevel" rows="4">
+						
+					</textarea>
+					<!-- <input type="text" id="signature-twolevel" class="form-control"> -->
+				</div>
+<!-- 				<div>
+	<span class="mobile-text">联系方式:</span>
+	<input type="text" id="mobile-twolevel" class="form-control" readonly="readonly">
+</div> -->
+				<div class="cenrerlist">
+					<span class="nick-text">地区:</span>
+					<input type="text" id="address-twolevel" class="form-control">
+				</div>
+				<div>
+					<button type="submit" class="btn-save" id="centerDataBtn"><span class="btn-text">保&nbsp;存</span></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+		<div class="col-md-12 col-xs-12 col-sm-12">
+			<div class="text-center">
+				<span>版权所有&copy;象翌微链科技发展有限公司&nbsp;桂ICP备1300904号</span>
+			</div>
+		</div>
+	</footer>
+	<script src="libs/jquery.min.js"></script>
+	<script src="libs/crypto/aes.js"></script>
+	<script src="libs/crypto/mode-ecb-min.js"></script>
+	<script src="libs/crypto/pad-nopadding-min.js"></script>
+  <script src="js/public-url.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/alert.js"></script>
+	<script src="js/personal-center-data.js"></script>
+</body>
+</html>

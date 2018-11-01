@@ -1,0 +1,338 @@
+.forgot-body {
+    /* background-color: #ab0707;
+    background-image: url(../images/bj.jpg);
+    background-repeat: no-repeat; */
+    height: 100%;
+}
+
+/*  登录页面样式  */
+.forgot-body .forgot-body-logo{
+    margin: 40px 0 30px;
+    height: 28px;
+}
+.forgot-body .forgot-body-logo img{
+  width: 165px;
+  height: 27px;
+}
+
+.forgot-body .wrapbj{
+    height: 600px;
+    background: #870d03;
+}
+/*   忘记密码第一步  */
+.forgot-body .wrapbj .forgotpasone{
+  width: 520px;
+  margin:134px auto 0 auto;
+}
+.forgot-body .wrapbj .forgotpasone .phone{
+  width: 183px;
+  height: 221px;
+  float: left;
+  margin-right:154px;
+  margin-bottom:125px;
+  display: block;
+}
+.forgot-body .wrapbj .forgotpasone .mailbox{
+  float: left;
+  margin-bottom:125px;
+  display: block;
+}
+.forgot-body .wrapbj .forgotpasone .forgot-bank{
+  width: 64px;
+  height:64px;
+  margin:0 auto;
+  cursor: pointer;
+}
+.forgot-body .wrapbj .prompt{
+  padding-top:15px;
+  margin-left: 35px;
+  height: 40px;
+  line-height: 40px;
+}
+.forgot-body .wrapbj .prompt em{
+  padding-left: 5px;
+  padding-right: 5px;
+  color: red;
+  font-style: normal;
+}
+.forgot-body .wrapbj .forgotbox{
+  width: 400px;
+  height: 370px;
+  margin:50px auto;
+  border-radius: 8px;
+  background-color: #fff;   
+}
+.forgot-body .wrapbj .forgotbox1{
+  height: 400px;
+}
+.forgot-body .wrapbj .forgotbox .listbox{
+    width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.forgot-body .wrapbj .forgotbox .abtn a{
+ color: #555;
+}
+.forgot-body .wrapbj .forgotbox .abtn input{
+  width: 18%;
+  height: 20px;
+  margin:0 5px 0 0;
+  display: block;
+  float: left;
+}
+.forgot-body .wrapbj .forgotbox .abtn .remember {
+  width: 100px;
+  float: left;
+}
+.forgot-body .wrapbj .forgotbox .abtn .zhuce {
+  float: right;
+}
+.forgot-body .wrapbj .forgotbox .abtn .forgotpas {
+  margin-right:10px;
+}
+.forgot-body .wrapbj .forgot2-bank{
+  width: 64px;
+  height:64px;
+  margin:0 auto;
+  cursor: pointer;
+}
+.forgot-body .wrap {
+    margin-top: 100px;
+}
+
+.forgot-body .wrap .logo {
+	width: 100%;
+	height: 100%;
+}
+
+.forgot-body .wrapbj .forgotbox input {
+	width: 100%;
+	height: 48px;
+    outline: none;
+    background-size: 55px 50px;
+    background-repeat: no-repeat;
+    background-position: 25px 7px;
+    padding-left: 55px;
+    font-size: 16px;
+    color: #7f7d87;
+    background-color: #ffffff;
+    border: solid 1px #e2e2e2;
+}
+
+.forgot-body .wrapbj .forgotbox input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+    -webkit-color: #ac0606 !important;
+}
+
+.forgot-body .wrapbj .forgotbox .account-input {
+	margin-top: 20px;
+}
+.forgot-body .wrapbj .forgotbox .showaccount {
+background: #f6f6f6;
+}
+.forgot-body .wrapbj .forgotbox .password-input {
+	margin-top: 15px;
+}
+.forgot-body .wrapbj .forgotbox .verificationcode{
+  width: 65%;
+  margin-top: 15px;
+  margin-right:5%;
+  padding-left:5px;
+  float:left;
+}
+.forgot-body .wrapbj .forgotbox .phonecode{
+  width: 60%;
+}
+.forgot-body .wrapbj .forgotbox .code-image{
+  width: 30%;
+  height: 48px;
+  margin-top: 15px;
+  line-height: 48px;
+  text-align: center;
+  float:left;
+  background: rgba(158,158,158,.4);
+  cursor: not-allowed;
+  color:rgba(0,0,0,0.6);
+}
+.forgot-body .wrapbj .forgotbox .phonecode-image{
+  width: 35%;
+
+}
+.forgot-body .wrapbj .forgotbox .setChange {
+    /*加一个按钮变灰的css*/
+    background: rgba(158,158,158,1) !important;
+    cursor: pointer;
+    color:white;
+}
+.forgot-body .wrapbj .forgotbox .code-image p{
+  width: 115px;
+  line-height: 48px;
+  text-align: center;
+}
+.forgot-body .wrapbj .forgotbox .account-img {
+    width: 28px;
+    height: 20px;
+    margin-top:-72px;
+    margin-left:18px;
+}.forgot-body .wrapbj .forgotbox1 .listbox .btn-default{
+   margin-top: 20px;
+ }
+.forgot-body .wrapbj .forgotbox .password-img {
+    width: 25px;
+    height: 19px;
+    margin-top:-72px;
+    margin-left:22px;
+}
+
+.forgot-body .wrapbj .forgotbox .account-input::-webkit-input-placeholder {
+    font-size: 16px;
+    color: #7f7d87;
+}
+
+.forgot-body .wrapbj .forgotbox .account-input::-moz-input-placeholder {
+    font-size: 16px;
+    color: #7f7d87;
+}
+
+.forgot-body .wrapbj .forgotbox .password-input::-webkit-input-placeholder {
+    font-size: 16px;
+    color: #7f7d87;
+}
+
+.forgot-body .wrapbj .forgotbox .password-input::-moz-input-placeholder {
+    font-size: 16px;
+    color: #7f7d87;
+}
+
+.forgot-body .wrapbj .forgotbox .btn-default {
+  width: 100%;
+  height: 48px;
+	margin-top: 40px;
+	margin-bottom: 10px;
+  padding:0;
+  line-height: 48px;
+	background-color: #929099;
+	border:none;
+	outline: none;
+    font-size: 18px;
+    color: #fff;
+}
+.forgot-body .wrapbj .forgotbox .btn-default:hover{
+    background-color: #b6b4be;
+}
+.forgot-body .wrap .login-text {
+	color: #a10904;
+	font-family: SimHei;
+	font-size: 18px;
+}
+
+.forgot-body .wrap .rf-text {
+	color: #f8b4b5;
+}
+.forgot-body .wrapbj .forgotbox1 .listbox laber{
+  width:25%;
+  float:left;
+}
+.forgot-body .wrapbj .forgotbox1 .listbox p{
+   float:left;
+ }
+
+  /*弹框背景*/
+.wuqianximg{
+  position:fixed;
+  top:0;
+  z-index:9999;
+  background:rgba(0,0,0,0.5);
+  width:100%;
+  height:100%;
+  color:black
+}
+@media (max-width: 1583px) {
+  .container-wuqianx {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-wuqianx {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+.wuqianx{
+  width: 400px;
+  height: 230px;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  margin-left: -200px;
+  top: 50%;
+  margin-top: -221px;
+  line-height: 50px;
+  z-index:99999;
+  border-radius: 5px;
+}
+.wuqianx h3{
+  width: 400px;
+  height: 40px;
+  margin-top:35px;
+  line-height: 40px;
+  color:#004b80;
+  font-size:18px;
+  text-align: center;
+}
+.wuqianx p{
+  width: 400px;
+  color:#929099;
+  text-align: center;
+}
+.wuqianx .errorbtn{
+  width: 360px;
+  height: 48px;
+  margin:20px auto 10px auto;
+  text-align: center;
+  padding: 0;
+  line-height: 48px;
+  background-color: #929099;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.kaijitupian-one-class .starsall .sevenStarsBg {
+    //padding: 10px;
+    background-color: rgba(120, 120, 120, 0.3);
+    position: absolute;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    max-width: 300px;
+    min-width:100px;
+    color: #bfbfbf;
+    font-size: 14px;
+    top: 60px;
+    right: 100px;
+    z-index:99;
+    border-radius: 8px;
+}
+.kaijitupian-one-class .starsall .sevenStarsBg ol li{
+  padding-left: 15px;
+}
+.kaijitupian-one-class .starsall .sevenStarsBg .bgTitle {
+    border-bottom: 1px solid silver;
+    padding: 10px;
+    padding-left: 0;
+    font-size: 18px;
+}
+
+.kaijitupian-one-class .starsall .sevenStarsBg ol li span{
+    line-height: 26px;
+    color: #bfbfbf;
+    cursor: pointer;
+}
+.kaijitupian-one-class .starsall .sevenStarsBg ol li a:hover {
+    background-color: rgba(0,0,0,0.3);
+    color:white;
+}

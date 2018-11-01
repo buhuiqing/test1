@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>帮助和反馈</title>
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/personal-center-help.css">
+	<style>
+		/*.tap {*/
+
+		/*!*text-align: center;*!*/
+
+		/*}*/
+
+		.tap li {
+			display: inline-block;
+			padding: 5px 10px;
+			background-color: #004b80;
+			color: white;
+			cursor: pointer;
+			border: 1px solid #004b80;
+			border-radius: 2px;
+
+		}
+
+		.tap li.tapCurrent {
+			background-color: white;
+			color: #004b80;
+			border: 1px solid #004b80;
+		}
+
+		.tap li:hover {
+			background-color: white;
+			color: #004b80;
+			border: 1px solid #004b80;
+		}
+
+		.helpImg {
+			text-align: center;
+			margin-top: 50px;
+			position: relative;
+			/*height: 300px;*/
+			margin-bottom: 20px;
+		}
+
+		.helpImg li {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			display: none;
+		}
+
+		.helpImg li div {
+			padding-top: 20px;
+		}
+
+		.helpImg li div h3 {
+			text-align: left;
+			font-size: 20px;
+			line-height: 40px;
+			color: #004b80;
+			font-weight: 500;
+		}
+
+		.helpImg li div p {
+			text-align: left;
+			text-indent: 2em;
+			line-height: 30px;
+			font-size: 16px;
+			color: #393939;
+		}
+
+		.helpImg li div img {
+			/*width: 95%;*/
+		}
+
+		.helpImg li:first-of-type {
+			display: block;
+		}
+
+		/*.helpImg li.ImgCurrent {*/
+
+		/**/
+
+		/*}*/
+
+		.goup-container {
+			background-color: #004b80 !important;
+			border-radius: 6px !important;
+		}
+	</style>
+</head>
+
+<body class="personal-center-help-body">
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 col-xs-12 col-sm-12">
+				<div class="personal-center-help-logo">
+					<img src="images/logo-red.png" alt=".." class="xiangpu">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="title">
+		<div class="container-fluid">
+			<h4>帮助与反馈</h4>
+		</div>
+	</div>
+	<div class="container-fluid">
+
+		<ul class="tap">
+			<li class="tapCurrent">功能介绍</li>
+			<li>FAQ</li>
+			<li>建议</li>
+		</ul>
+		<ul class="helpImg">
+			<li>
+				<div>
+					<h3>注册</h3>
+					<p>账号密码登录页面，提供了“立即注册”入口，可供未注册用户注册。</p>
+					<img src="./images/center-helps/submit.png" alt="">
+				</div>
+				<div>
+					<h3>登录</h3>
+					<p>PC端只提供了账号密码登录功能，并增加了记住密码功能。</p>
+					<img src="./images/center-helps/login.png" alt="">
+				</div>
+				<div>
+					<h3>找回密码</h3>
+					<p>账号密码登录页面，提供了“忘记密码”入口，可供用户忘记密码时找回。忘记密码提供了邮箱验证与手机验证两种方式。</p>
+					<img src="./images/center-helps/findPwd.png" alt="">
+				</div>
+				<div>
+					<h3>小圆点</h3>
+					<p>此APP独创了小圆点，在应用内作为全局导航用，可以快速返回到登录页、用户中心，并提供了一些消息、搜索等入口。</p>
+					<img src="./images/center-helps/circle.png" alt="">
+				</div>
+				<div>
+					<h3>用户说明</h3>
+					<p>此应用适合用户：所属企业用户、企业旗下子公司用户，及企业客户。不同的用户在此应用中有不同的权限，如企业客户暂不可访问微链海，仅提供企业用户访问；微链海、微链宝、微链娃均需登录后才能访问。</p>
+					<img src="./images/center-helps/userExp.png" alt="">
+				</div>
+			</li>
+			<li>
+				<div>暂无内容</div>
+			</li>
+			<li>
+				<div>暂无内容</div>
+			</li>
+		</ul>
+	</div>
+	<footer>
+		<div class="col-md-12 col-xs-12 col-sm-12">
+			<div class="text-center">
+				<span>版权所有&copy;象翌微链科技发展有限公司&nbsp;桂ICP备1300904号</span>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="libs/jquery.min.js"></script>
+	<script src='./js/jquery.goup.min.js'></script>
+	<script>
+		$(function () {
+			function payHeight(parent, index) {
+				var divs = parent.children('li').eq(index).children('div');
+				var sumheight = 0;
+				for (var i = 0, len = divs.length; i < len; i++) {
+					sumheight += divs.eq(i).outerHeight()
+				};
+				parent.outerHeight(sumheight);
+			}
+			payHeight($('.helpImg'), 0);
+			$.goup({
+
+				trigger: 100,
+
+				bottomOffset: 150,
+
+				locationOffset: 100,
+
+				title: '返回顶部',
+
+				titleAsText: true
+
+			});
+			$('.tap > li ').on('click', function () {
+				$(this).addClass('tapCurrent').siblings().removeClass('tapCurrent');
+				var index = $(this).index();
+				$('.helpImg > li').eq($(this).index()).stop().fadeIn(500).siblings().fadeOut(300);
+				payHeight($('.helpImg'), index);
+			});
+		})
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+.personal-center-security {
+	background-color: #fff;
+	min-width: 1100px;
+	font-size: 14px;
+}
+.personal-center-security .personal-center-security-logo{
+	margin: 80px 0 30px;
+    height: 28px;
+}
+.personal-center-security .title {
+    height: 100px;
+    margin-bottom: 25px;
+    background-color: #004b80;
+}
+.personal-center-security .title h4{
+	height: 100px;
+	padding-left: 100px;
+	line-height: 100px;
+	color: #fff;
+}
+.personal-center-security .form-edit .cenrerlist{
+	height: 40px;
+	margin-top: 30px;
+	line-height: 40px;
+}
+.personal-center-security .form-edit .nick-text {
+	width: 30%;
+	padding-right: 5px;
+	color: #656c73;
+	float: left;
+	text-align: right;
+}
+.personal-center-security .form-edit input {
+	width: 70%;
+	height: 40px;
+	padding-left: 5px;
+	border-radius: 5px;
+	background-color: #dadede;
+	display: inline;
+	box-shadow: none;
+	color:#3d454c;
+	font-size:16px;
+	float: left;
+    border-radius: 3px;
+    background-color: #f1f1f1;
+    border: solid 1px #e2e2e2;
+}
+
+.personal-center-security .form-edit .btn-save {
+  width: 100px;
+  height: 40px;
+  margin: 20px 0 20px 30%;
+  border-radius: 3px;
+  background-color: #909aa4;
+  outline: none;
+  border: 0;
+}
+.personal-center-security .form-edit .btn-save:hover{
+  background-color: #a3b0bd;
+}
+.personal-center-security .form-edit .btn-text {
+	color: #ffffff;
+	font-size: 15px;
+}
+
+@media (max-width: 1583px) {
+}
+
+@media (max-width: 768px) {
+}

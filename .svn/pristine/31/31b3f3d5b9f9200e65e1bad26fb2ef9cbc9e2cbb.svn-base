@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1"/>
+	<title>我的空间</title>
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/personal-center-myspace.css">
+</head>
+<body class="personal-center-myspace">
+<!--  <nav class="navbar-zdy">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 col-xs-12 col-sm-12">
+        <div class="logo">
+          <img src="images/logo-small.png" alt=".." class="xiangpu">
+          <img alt=".." id="touxiang-id" class="pull-right touxiang">
+        </div>
+        悬停效果
+        <input type="hidden" id="pagex" />
+        <input type="hidden" id="pagey" />
+        <div class="blockdiv" id="blockdiv">
+          <div class="text-center table-box">
+            <a href="personal-center.html">个人中心</a>
+            <hr/>
+            <a id="loginout">安全退出</a>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </div>
+</nav> -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 col-xs-12 col-sm-12">
+        <div class="personal-center-myspace-logo">
+          <img src="images/logo-red.png" alt=".." class="xiangpu">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="title">
+    <div class="container-fluid">
+      <h4>我的空间</h4>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="myspacebox">
+      <div class="mypool" id="myPool">
+        <div class="text-center mylore on" id="pool1" onclick="poollist(1)">知识</div>
+        <div class="text-center mystudy" id="pool2" onclick="poollist(2)">学习</div>
+        <div class="text-center myware" id="pool3" onclick="poollist(3)">商品</div>
+        <div class="text-center myorganize" id="pool4" onclick="poollist(4)">组织</div>
+        <div class="text-center mywork" id="pool5" onclick="poollist(5)">工作</div>
+        <div class="text-center mycollection" id="pool6" onclick="poollist(6)">收藏</div>
+      </div>
+      <div class="kk">
+ <!--        <ul id="listshow1" class="allnone" style="display: block;">
+   我的知识样式
+   <li>
+     <div class="mylore-t">巧妙地使用CAD编辑器改变文字大小</div>
+     <p>CAD绘图是一个复杂的过程，我们需要考虑到方方面面，其中出现的问题也不少，当我们想要修改CAD文字大小的时候该怎么办呢？迅捷CAD编辑器一款集CAD查看、编辑、转换于一体的CAD编辑工具，我们可以借助于该软件改变CAD文字大小</p>
+   </li>
+   <li>
+     <div class="mylore-t">怎样健康喝水 这样喝水有助我们的健康</div>
+     <p>水，是我们每天必需的物品，离开了水我们很难存活。但是您知道怎样喝水有助于我们的健康吗？接下来就来为您介绍如何健康喝水……</p>
+   </li>
+   <li>
+     <div class="mylore-t">冬季太干燥 常吃水果能改善</div>
+     <p>冬季寒冷且干燥，在日常生活中很多人对付干燥主要的方式还是喝水来补水。其实除了喝水常吃水果也能帮助我们改善干燥的症状。</p>
+   </li>
+   <li>
+     <div class="mylore-t">让你的个人电脑飞快</div>
+     <p>浏览器、办公室软件或是系统程序运行久了，都会产生垃圾文件以及暂存档案。久久小编网站推荐一款免费清理系统缓存垃圾的软件——360安全卫士，只要几个按键就能将系统清理干净。</p>
+   </li>
+ </ul>
+ 
+ <ul id="listshow2" class="allnone">
+   我的学习样式
+   <li>
+     <div class="mylore-t">学习也是一种快乐</div>
+     <p>生活是一门永远学不完的学问，不同年龄、不同性格、不同工作的人们每天在自己狭小的空间里打拼，是爱好让人们聚到了一起，生活变得如此的多姿多彩，互相切磋学习也是一种快乐，能有学习的机会更是一种快乐!</p>
+   </li>
+   <li>
+     <div class="mylore-t">学习经验小谈</div>
+     <p>学习好要努力。学习好的人分为两种：一类是天才(这种人太少了)，另一类则是普通人。大家同是普通人，为什么他们成绩好呢?其原因就在于他们付出了努力。做任何事都要付出，“世上没有免费的午餐”。</p>
+   </li>
+   <li>
+     <div class="mylore-t">珍惜时间，勤奋学习</div>
+     <p>时间老人是公正无私的，赋予每人每天都是24小时。把握时间，奋力进取者，时间将无私地帮助你超越岁月;浪费时间、虚度光阴者，只能吞下失败的苦果。</p>
+   </li>
+   <li>
+     <div class="mylore-t">感悟学习</div>
+     <p>学而知之是初境。想起那一段学习，体验最深的是一个苦字。强度大，任务重，丝毫不敢懈怠。满脑子是理论、词组、推理、解释等。唯有通过学习，人才会博古通今。</p>
+   </li>
+ </ul>
+ 
+ <ul id="listshow3" class="allnone">
+   我的商品样式
+   <li class="goods">
+     <div class="goods-l">
+       <div class="media">
+         <div class="media-left">
+           <img class="media-object" src="images/myspace1.jpg" alt="...">
+         </div>
+         <div class="media-body">
+           <h4 class="media-heading">电脑桌家用艺术彩绘钢琴烤</h4>
+           <p>蔓斯菲尔台式机电脑桌家用艺术彩绘钢琴烤漆加宽台面加粗钢管卧室时尚简约环保单人办公桌带键盘盒 黑花 无抽屉磨砂面</p>
+         </div>
+       </div>
+     </div>
+     <div class="goods-r">
+       <div class="closecollection">￥<span>149.00</span></div>
+     </div>
+   </li>
+   <li class="goods">
+     <div class="goods-l">
+       <div class="media">
+         <div class="media-left">
+           <img class="media-object" src="images/myspace2.jpg" alt="...">
+         </div>
+         <div class="media-body">
+           <h4 class="media-heading">个性的书柜</h4>
+           <p>365个个性的书柜收纳法-爱上收纳每一天 9787561191934</p>
+         </div>
+       </div>
+     </div>
+     <div class="goods-r">
+       <div class="closecollection">￥<span>88.00</span></div>
+     </div>
+   </li>
+ </ul>
+ <ul id="listshow4" class="allnone">
+   我的工作样式       
+   <li>
+     <div class="mywork-t">共同目标——前提要素</div>
+     <p>组织拥有一个（经常更多）目的或目标。他们有目的和存在的理由。员工要认同，目标分层次。</p>
+   </li>
+   <li>
+     <div class="mywork-t">结构—载体要素</div>
+     <p>他们有互相协调的手段，保证人们可以进行沟通、互动并交流他们的工作。分工协作的表现。由部门、岗位、职责、从属关系构成。</p>
+   </li>
+   <li>
+     <div class="mywork-t">管理——维持要素</div>
+     <p>为了实现目的，他们拥有一套计划、控制、组织和协调的流程。以计划、执行、监督、控制等手段保证目标的实现。</p>
+   </li> 
+ </ul>
+ 
+ <ul id="listshow5" class="allnone">
+   我的学习样式
+   <li>
+     <div class="mylore-t">待办事项管理</div>
+     <p>根据David Allen提出的GTD方法，透过不同的资料夹来分类与管理各种待办事项。</p>
+   </li>
+   <li>
+     <div class="mylore-t">专案</div>
+     <p>每个专案可以拥有一个以上的待办事项，可以方便观看到该专案正在进行中的工作。</p>
+   </li>
+   <li>
+     <div class="mylore-t">工作日志</div>
+     <p>用于纪录您每天工作所花费的时间，并且产生工作日志报表。</p>
+   </li>
+   <li>
+     <div class="mylore-t">资料夹</div>
+     <p>用来存放待办事项项目，预设提供了：收件匣、今天、下次、某天、预计、等待、难题、完成等8种。</p>
+   </li>
+   <li>
+     <div class="mylore-t">备份与还原</div>
+     <p>您可以透过瓦.实验室所提供的云端空间，进行手机上相关资料的上传备份与将云端备份资料下载还原到您的手机上。</p>
+   </li>
+ </ul>
+ <ul id="listshow6" class="allnone">
+   我的收藏样式
+   <li class="collection">
+     <div class="collection-l">
+       <div class="mywork-t">从底层往上爬，我抓住了属于我的每一个机会</div>
+       <p>“天生会降低别人的期望值，才赢得漂亮。”这是语姐，曾经的老板对我的评价。为什么她会这么说呢？因为一开始我太不起眼了，甚至会让人觉得没有什么本事。但过一段时间后，发现我这个人真的还不错，进而另眼相看。</p>
+     </div>
+     <div class="collection-r">
+       <div class="closecollection qxshouc">取消收藏</div>
+       <div class="closecollection tjshouc">收藏</div>
+     </div>
+   </li>
+   <li class="collection">
+     <div class="collection-l">
+       <div class="mywork-t">一个女孩在上海的奋斗史：迷茫时，就做好眼下的工作</div>
+       <p>我已经在上海3年多了，这几年我变化很大。这让我想到了2013年10月份我来到上海第一年的生活，那个时候变化也非常大。　　我为什么大学毕业2年后，才从家乡来到上海呢？官方的回答：不甘于小城市的平凡。</p>
+     </div>
+     <div class="collection-r">
+       <div class="closecollection qxshouc">取消收藏</div>
+       <div class="closecollection tjshouc">收藏</div>
+     </div>
+   </li>
+   <li class="collection">
+     <div class="collection-l">
+       <div class="mywork-t">奔跑着，追寻夜空中最亮的星</div>
+       <p>大四，身边的同学都开始奔走于北京这座“包容”的城市。北京的魅力或许就在于此，它很大，可以包容所有心怀梦想的人；它也很小，不够执着坚定必会被淘汰出局。专业实习是大四上学期必修的课程，月底的实习分享会更是别开生面。</p>
+     </div>
+     <div class="collection-r">
+       <div class="closecollection qxshouc">取消收藏</div>
+       <div class="closecollection tjshouc">收藏</div>
+     </div>
+   </li>
+ </ul> -->
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="col-md-12 col-xs-12 col-sm-12">
+      <div class="text-center">
+        <span>版权所有&copy;象翌微链科技发展有限公司&nbsp;桂ICP备1300904号</span>
+      </div>
+    </div>
+  </footer>
+	<script src="libs/jquery.min.js"></script>
+  <script src="js/public-url.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/alert.js"></script>
+	<script src="js/personal-center-myspace.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+.personal-center-help-body {
+	background-color: #c6caca;
+}
+.personal-center-help-body {
+	background-color: #fff;
+	min-width: 1100px;
+	font-size: 14px;
+}
+.personal-center-help-body .personal-center-help-logo{
+	margin: 80px 0 30px;
+    height: 28px;
+}
+.personal-center-help-body .title {
+    height: 100px;
+    margin-bottom: 25px;
+    background-color: #004b80;
+}
+.personal-center-help-body .title h4{
+	height: 100px;
+	padding-left: 60px;
+	line-height: 100px;
+	color: #fff;
+}
+.personal-center-help-body .helpbox{
+	width: 1000px;
+	margin:0 auto;
+}
+.personal-center-help-body .helpbox li{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #e2e2e2;
+}
+.personal-center-help-body .helpbox .helpbox-t{
+	line-height: 20px;
+	margin-bottom: 15px;
+}
+.personal-center-help-body .helpbox .helpbox-t span{
+   padding-right: 10px;
+   font-weight: bold;
+   color: #06396d;
+   display: table-cell;
+   float: left;
+}
+.personal-center-help-body .helpbox .helpbox-t p{
+	height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Microsoft YaHei;
+    letter-spacing: 0.2px;
+    color: #000000;
+    display: table-cell;
+}
+.personal-center-help-body .helpbox .helpconter span{
+   padding-right: 10px;
+   font-weight: bold;
+   color: #730000;
+   display: table-cell;
+}
+.personal-center-help-body .helpbox .helpconter p{
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #4a4a4a;
+  display: table-cell;
+}
+
+
+/* .personal-center-help-body .wrap {
+	background-color: #dde1e1;
+	height: 550px;
+	border-radius: 5px;
+	margin-top: 13px;
+}
+
+.personal-center-help-body .wrap hr {
+	width: 95%;
+	margin-left: 25px;
+	border: 1px solid #ccc;
+	border-left-width: 0;
+	border-right-width: 0;
+	border-bottom-width: 0;
+}
+
+.personal-center-help-body .wrap h2 {
+	margin-left: 25px;
+	font-weight: bold;
+	font-family: SimHei;
+	padding-top: 20px;
+}
+
+.personal-center-help-body .wrap h4 {
+	margin-left: 25px;
+	font-weight: bold;
+	font-family: SimHei;
+}
+
+.personal-center-help-body .wrap article {
+	margin-left: 25px;
+	margin-right: 25px;
+	line-height: 20px;
+	font-size: 14px;
+}
+
+.personal-center-help-body .wrap .faq-div {
+	margin-top: 40px;
+}
+
+.personal-center-help-body .index-gohome {
+	margin-top:-60px;
+	margin-right:230px;
+	float:right;
+	position: relative;
+} */
+
+@media (max-width: 1583px) {
+}
+
+@media (max-width: 768px) {
+}

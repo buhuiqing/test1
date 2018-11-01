@@ -1,0 +1,238 @@
+.personal-center-myspace {
+	background-color: #fff;
+	min-width: 1100px;
+	font-size: 14px;
+}
+.personal-center-myspace .personal-center-myspace-logo{
+	margin: 80px 0 30px;
+    height: 28px;
+}
+.personal-center-myspace .title {
+    height: 100px;
+    margin-bottom: 25px;
+    background-color: #004b80;
+}
+.personal-center-myspace .title h4{
+	height: 100px;
+	padding-left: 60px;
+	line-height: 100px;
+	color: #fff;
+}
+.personal-center-myspace .myspacebox{
+	width: 1000px;
+	margin:0 auto;
+}
+.personal-center-myspace .myspacebox .mypool{
+	height: 50px;
+}
+.personal-center-myspace .myspacebox .mypool:hover {
+	cursor:pointer;
+}
+.allnone{
+  display: none
+}
+.personal-center-myspace .mylore, .myspacebox .mystudy, .myorganize, .myware, .mywork,.mycollection{
+	float: left;
+	width: 85px;
+	height: 36px;
+	line-height: 36px;
+	margin-right: 24px;
+    border-radius: 2px;
+    background-color: #f1f1f1;	
+    color: #4a4a4a;
+}
+.personal-center-myspace .myspacebox .on{
+    background-color: #004b80;
+    color: #fff
+}
+.personal-center-myspace .myspacebox li{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #e2e2e2;
+}
+.personal-center-myspace .myspacebox .mywork-t{
+	height: 20px;
+    margin-top: 7px;
+    margin-bottom: 15px;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Microsoft YaHei;
+    letter-spacing: 0.2px;
+    color: #000000;
+}
+.personal-center-myspace .myspacebox .mylore-t{
+	height: 20px;
+    margin-top: 7px;
+    margin-bottom: 15px;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Microsoft YaHei;
+    letter-spacing: 0.2px;
+    color: #004b80;
+}
+.personal-center-myspace .myspacebox p{
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #4a4a4a;
+}
+
+/* 我的空间--收藏样式 */
+.personal-center-myspace .myspacebox .collection{
+	height: 120px;
+}
+.personal-center-myspace .myspacebox .collection-l{
+	width: 770px;
+	height: 90px;
+	float: left;
+}
+.personal-center-myspace .myspacebox .collection-r{
+	width: 100px;
+	height: 40px;
+	float: right;
+}
+.personal-center-myspace .myspacebox .collection-r .closecollection{
+  width: 100px;
+  height: 40px;
+  margin-top: 15px;
+  line-height: 40px;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+}
+.personal-center-myspace .myspacebox .collection-r .qxshouc{
+  color: #fff;
+  background-color: #909aa4;
+}
+.personal-center-myspace .myspacebox .collection-r .tjshouc{
+  color: #fff;
+  background-color: #004b80;
+  display: none;
+}
+
+/* 我的空间--收藏样式 */
+.personal-center-myspace .myspacebox .goods{
+	height: 130px;
+}
+.personal-center-myspace .myspacebox .goods .goods-l{
+  width: 690px;
+  height: 90px;
+  float: left;
+}
+.personal-center-myspace .myspacebox .goods .goods-l .media .media-left{
+	width: 120px;
+	height: 90px;
+	padding-right: 18px;
+}
+.personal-center-myspace .myspacebox .goods .goods-l .media .media-left img{
+	width: 110px;
+	height: 90px;
+}
+.personal-center-myspace .myspacebox .goods .goods-l .media .media-body .media-heading{
+  height: 20px;
+  margin-top: 3px;
+  margin-bottom: 15px;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Microsoft YaHei;
+  letter-spacing: 0.2px;
+  color: #000000;
+}
+.personal-center-myspace .myspacebox .goods .goods-l .media .media-body p{
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #4a4a4a;
+}
+.personal-center-myspace .myspacebox .goods .goods-r{
+	width: 200px;
+	height: 40px;
+	padding-right: 10px;
+	margin-top: 20px;
+	float: right;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    color: #730000;
+    text-align: right;
+}
+.personal-center-myspace .myspacebox .goods .goods-r span{
+	padding-left: 5px;
+}
+/* .personal-center-myspace .wrap {
+	background-color: #dde1e1;
+	height: 550px;
+	border-radius: 5px;
+	margin-top: 13px;
+}
+.personal-center-myspace .wrap h4 {
+	font-weight: bold;
+	color: #29323b;
+	margin-left: 25px;
+	margin-top: 25px;
+	font-family: SimHei;
+	padding-top: 20px;
+}
+
+.personal-center-myspace .wrap hr {
+	width: 95%;
+	margin-left: 25px;
+	border: 1px solid #ccc;
+	border-left-width: 0;
+	border-right-width: 0;
+	border-bottom-width: 0;
+}
+
+.personal-center-myspace .wrap .mypool:hover {
+	cursor:pointer;
+}
+
+.personal-center-myspace .wrap .mystudy{
+	float: left;
+	width: 100px;
+	height: 40px;
+	background-color: #f3f9f9;
+	margin-left: 25px;
+}
+
+.personal-center-myspace .wrap .mylore, .myorganize, .myware, .mywork {
+	float: left;
+	width: 100px;
+	height: 40px;
+	background-color: #f3f9f9;
+	margin-left: 10px;
+}
+
+.personal-center-myspace .wrap .mypool span {
+	color:#868d92;
+	line-height: 40px;
+}
+
+.personal-center-myspace .wrap figcaption {
+	margin-left: 25px;
+	margin-top: 20px;
+	color: #656c73;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.personal-center-myspace .wrap p {
+	margin-left: 25px;
+	color: #656c73;
+	margin-top: 5px;
+	font-size: 14px;
+}
+
+.personal-center-myspace .index-gohome {
+	margin-top:-60px;
+	margin-right:230px;
+	float:right;
+	position: relative;
+} */
+
+@media (max-width: 1583px) {
+}
+
+@media (max-width: 768px) {
+}

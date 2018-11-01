@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1"/>
+	<title>个人中心</title>
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/personal-center.css">
+</head>
+<body class="personal-center-body">
+  <div class="container-fluid">
+	  <div class="row">
+	    <div class="col-md-12 col-xs-12 col-sm-12">
+	      <div class="personal-center-logo">
+	        <img src="images/login-logo.png" alt=".." class="xiangpu">
+	        <span class="signout" id="loginout">退出</span>
+	      </div>
+	    </div>
+	  </div>
+  </div>
+	<div class="qulasa">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12 col-xs-12 col-sm-12"><img class="center-block" id="large-touxiang-id"></div>
+				<div class="text-center div-qulasa">
+					<span class="span-one" id="nick"></span>
+				</div>
+				<div class="text-center row">
+				  <div class="span-box1 col-md-6 col-xs-6 col-sm-6">
+						<span class="span-two">微链号:&nbsp;</span>
+						<span class="span-three" id="weilianhao"></span>
+					</div>
+					<div class="span-box2  col-md-6 col-xs-6 col-sm-6">
+						<span class="span-two">签名:&nbsp;</span>
+						<span class="span-three" id="signature"></span>
+					</div>
+			</div>	
+		</div>
+	</div>
+  </div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2 col-xs-2 col-sm-2">
+				<div class="personal-center-content-one">
+					<div class="img-div">
+						<a href="personal-center-data.html">
+							<img src="images/personal-center/woIcon1@3x.png" alt=".." class="center-block img-class" id="centerDataImg">
+						</a>
+					</div>
+					<div class="text-center span-div"><span><a href="personal-center-data.html"><span>个人资料</span></a></span></div>
+				</div>
+			</div>
+			<div class="col-md-2 col-xs-2 col-sm-2">
+				<div class="personal-center-content-two">
+					<div class="img-div">
+						<a href="personal-center-security.html">
+							<img src="images/personal-center/woIcon2@3x.png" alt=".." class="center-block img-class">
+						</a>
+					</div>
+					<div class="text-center span-div"><a href="personal-center-security.html"><span>帐户安全</span></a></div>
+				</div>
+			</div>
+			<div class="col-md-2 col-xs-2 col-sm-2">
+				<div class="personal-center-content-two">
+					<div class="img-div">
+						<a href="personal-center-news.html">
+							<img src="images/personal-center/woIcon3@3x.png" alt=".." class="center-block img-class">
+						</a>
+					</div>
+					<div class="text-center span-div"><a href="personal-center-news.html"><span>消息</span></a></div>
+				</div>
+			</div>
+			<div class="col-md-2 col-xs-2 col-sm-2">
+				<div class="personal-center-content-two">
+					<div class="img-div">
+						<a href="personal-center-myspace.html">
+							<img src="images/personal-center/woIcon4@3x.png" alt=".." class="center-block img-class">
+						</a>
+					</div>
+					<div class="text-center span-div"><a href="personal-center-myspace.html"><span>我的空间</span></a></div>
+				</div>
+			</div>
+			<div class="col-md-2 col-xs-2 col-sm-2">
+				<div class="personal-center-content-two">
+					<div class="img-div">
+						<a href="personal-center-setup.html">
+							<img src="images/personal-center/woIcon5@3x.png" alt=".." class="center-block img-class">
+						</a>
+					</div>
+					<div class="text-center span-div"><a href="personal-center-setup.html"><span>设置</span></a></div>
+				</div>
+			</div>
+			<div class="col-md-2 col-xs-2 col-sm-2">
+				<div class="personal-center-content-two">
+					<div class="img-div">
+						<a href="personal-center-help.html">
+							<img src="images/personal-center/woIcon6@3x.png" alt=".." class="center-block img-class">
+						</a>
+					</div>
+					<div class="text-center span-div"><a href="personal-center-help.html"><span>帮助和反馈</span></a></div>
+				</div>
+			</div>
+			<div class="col-md-2 col-xs-2 col-sm-2">
+				<div class="personal-center-content-two">
+					<div class="img-div">
+						<a href="personal-center-about.html">
+							<img src="images/personal-center/woIcon7@3x.png" alt=".." class="center-block img-class">
+						</a>
+					</div>
+					<div class="text-center span-div"><a href="personal-center-about.html"><span>关于</span></a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer style="margin-top:0px;">
+		<div class="col-md-12 col-xs-12 col-sm-12">
+			<div class="text-center">
+				<span>版权所有&copy;象翌微链科技发展有限公司&nbsp;桂ICP备1300904号</span>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="libs/jquery.min.js"></script>
+  <script src="js/public-url.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/alert.js"></script>
+	<script src="js/personal-center.js"></script>
+</body>
+</html>

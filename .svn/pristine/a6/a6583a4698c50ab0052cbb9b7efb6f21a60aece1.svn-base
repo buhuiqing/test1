@@ -1,0 +1,134 @@
+.personal-center-body {
+	background-color: #fff;
+	min-width: 1100px;
+}
+.personal-center-body .col-md-2 {
+	padding-left: 8px;
+	padding-right: 8px;
+	width: 14.2857%;
+}
+.personal-center-body .personal-center-logo{
+	margin: 70px 0 30px;
+    height: 28px;
+}
+.personal-center-body .personal-center-logo span{
+	cursor: pointer;
+}
+.personal-center-body .signout{
+	float: right;
+}
+.personal-center-body .qulasa {
+	height: 320px;
+	margin-bottom: 25px;
+	background-color: #004b80;
+}
+
+.personal-center-body .qulasa img {
+	width: 96px;
+	height: 96px;
+	margin-top: 55px;
+	margin-bottom: 25px;
+	border-radius: 8px;
+}
+.personal-center-body .qulasa .div-qulasa {
+	margin-bottom: 20px;
+}
+
+.personal-center-body .qulasa .span-one {
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.personal-center-body .qulasa .span-two {
+	color: #fff;
+	letter-spacing: 0.2px;
+}
+
+.personal-center-body .qulasa .span-three {
+	font-size: 14px;
+	color: #fff;
+}
+.qulasa .span-box1{
+	height: 17px;
+	line-height: 17px;
+	text-align: right;
+	padding-right: 35px;
+	border-right: solid 1px #979797;
+}
+.qulasa .span-box2{
+	height: 17px;
+	line-height: 17px;
+	padding-left: 35px;
+	text-align: left;
+}
+
+.personal-center-body .qulasa span {
+	margin-bottom: 40px;
+}
+
+.personal-center-content-one {
+	background-color: #f9f9f9;
+	border-radius:8px;
+	height:200px;
+}
+
+.personal-center-body .personal-center-content-two {
+	background-color: #f9f9f9;
+	border-radius:8px;
+	height:200px;
+	margin-bottom:15px;
+}
+
+.personal-center-body .img-div {
+	height:65%;
+}
+
+.personal-center-body .img-class { 
+	padding-top:54px
+}
+
+.personal-center-body .span-div {
+	height:35%;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
+.personal-center-body .span-div span {
+	 color: #39393a;
+	/* font-weight: bold; */
+}
+
+.personal-center-body .gohome {
+	margin-top: 80px;
+}
+
+.personal-center-body footer {
+	margin-top: 30px;
+	height: 70px;
+}
+
+.personal-center-body footer span {
+	line-height: 70px;
+}
+
+
+@media (max-width: 1583px) {
+  .personal-center-body .container-fluid {
+	margin-left: 100px;
+	margin-right: 100px;
+  }
+  .col-md-2,.col-xs-2,.col-sm-2{
+      width: 12.5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .personal-center-body .container-fluid {
+	margin-left: 50px;
+	margin-right: 50px;
+  }
+  .col-md-2,.col-xs-2,.col-sm-2 {
+      width: 12.5%;
+  }
+}
+

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1"/>
+	<title>消息</title>
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/personal-center-news.css">
+</head>
+<body class="personal-center-news-body">
+<!-- 	<nav class="navbar-zdy">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 col-xs-12 col-sm-12">
+				<div class="logo">
+					<img src="images/logo-small.png" alt=".." class="xiangpu">
+					<img alt=".." id="touxiang-id" class="pull-right touxiang">
+				</div>
+				悬停效果
+				<input type="hidden" id="pagex" />
+				<input type="hidden" id="pagey" />
+				<div class="blockdiv" id="blockdiv">
+					<div class="text-center table-box">
+						<a href="personal-center.html">个人中心</a>
+						<hr/>
+						<a id="loginout">安全退出</a>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+</nav> -->
+  <div class="container-fluid">
+	  <div class="row">
+	    <div class="col-md-12 col-xs-12 col-sm-12">
+	      <div class="personal-center-news-logo">
+	        <img src="images/logo-red.png" alt=".." class="xiangpu">
+	      </div>
+	    </div>
+	  </div>
+  </div>
+  <div class="title">
+  	<div class="container-fluid">
+  		<h4>我的消息</h4>
+  	</div>
+  </div>
+	<div class="container-fluid">
+		<div class="newsbox">
+<!-- 		  <ul>
+	<li>
+					<div class="media">
+					  <div class="media-left">
+				      <img class="media-object" src="images/myspace2.jpg" alt="...">
+					  </div>
+					  <div class="media-body">
+					    <h4 class="media-heading">发送畅通</h4>
+					    <p>目前短信群发也可以使用网关和卡来进行，但是发送的到达率均不如短信群发平台。究其原因是因短信息短信息为，短信发送平台具有一条以上的发送通道，发送到达率高。</p>
+					  </div>
+					</div>
+	</li>
+	<li>
+					<div class="media">
+					  <div class="media-left">
+				      <img class="media-object" src="images/myspace1.jpg" alt="...">
+					  </div>
+					  <div class="media-body">
+					    <h4 class="media-heading">操作简便</h4>
+					    <p>运用于网络后台的短信群发平台，可以根据发送方的需求自主撰写相关的文字内容，操作简便，修改方便。同时，统一的发送也确保了告知信息的精确度。</p>
+					  </div>
+					</div>
+	</li>
+	<li>
+					<div class="media">
+					  <div class="media-left">
+				      <img class="media-object" src="images/myspace2.jpg" alt="...">
+					  </div>
+					  <div class="media-body">
+					    <h4 class="media-heading">简讯文字</h4>
+					    <p>因为简讯有限的文字长度，所以简讯的写作中有相当多由使用者自创的缩写，如在英文中用同音的4短信息短信息﹙音念four﹚来代替替漀爀挀，亦有不少的省略字，如txt msg就是text message的省略字。</p>
+					  </div>
+					</div>
+	</li>
+	<li>
+					<div class="media">
+					  <div class="media-left">
+				      <img class="media-object" src="images/myspace1.jpg" alt="...">
+					  </div>
+					  <div class="media-body">
+					    <h4 class="media-heading">创新</h4>
+					    <p>一些新的简讯服务能够针对大众媒体所发来的简讯，提供动画式的简讯提醒，如新闻、天气、财经讯息、体育动态和其他资讯等。</p>
+					  </div>
+					</div>
+	</li>
+	<li>
+					<div class="media">
+					  <div class="media-left">
+				      <img class="media-object" src="images/myspace2.jpg" alt="...">
+					  </div>
+					  <div class="media-body">
+					    <h4 class="media-heading">社会影响</h4>
+					    <p>简讯也影响了社会文化和一些政治活动</p>
+					  </div>
+					</div>
+	</li>
+	<li>
+					<div class="media">
+					  <div class="media-left">
+				      <img class="media-object" src="images/myspace1.jpg" alt="...">
+					  </div>
+					  <div class="media-body">
+					    <h4 class="media-heading">群组发送</h4>
+					    <p>快捷地发送信息：可同时向大量目标发送同一信息，并保证所有目标都能最快地收到。节减大量的通讯费用：每发送一条信息最高不超过0.10元，并且无通讯费和漫游费，可大大节减客户的电话费等通信费用。</p>
+					  </div>
+					</div>
+	</li>
+</ul> -->
+
+
+<!-- 				<div class="wrap">
+	<div>
+		<h4>消息显示</h4>
+		<hr>
+	</div>
+	<figure>
+		<figcaption>这是第一条消息标题</figcaption>
+		<p>这是第一条消息内容............</p>
+	</figure>
+	<figure>
+		<figcaption>这是第二条消息标题</figcaption>
+		<p>这是第二条消息内容............</p>
+	</figure>
+</div> -->
+		</div>
+	</div>
+	<footer>
+		<div class="col-md-12 col-xs-12 col-sm-12">
+			<div class="text-center">
+				<span>版权所有&copy;象翌微链科技发展有限公司&nbsp;桂ICP备1300904号</span>
+			</div>
+		</div>
+	</footer>
+	<script src="libs/jquery.min.js"></script>
+  <script src="js/public-url.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/alert.js"></script>
+</body>
+</html>

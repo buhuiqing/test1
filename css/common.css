@@ -1,0 +1,128 @@
+body {
+	height: 100%;
+	font-family: Microsoft YaHei, tahoma, Arial, SimSun;
+	font-size: 14px;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+}
+ul,li,ol{
+	list-style-type:none;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8,
+.col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7,
+.col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6,
+.col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5,
+.col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding-right: 0; 
+    padding-left: 0; 
+}
+/* 去掉ie input框的叉和眼睛*/
+::-ms-clear, ::-ms-reveal {
+	display: none;
+}
+i{
+	font-style: normal;
+}
+
+.container-fluid {
+	margin-left: 230px;
+	margin-right: 230px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+ .col-xs-12, .col-sm-12, .col-md-12 {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.navbar-zdy {
+	background-color: #29323b;
+	height: 70px;
+}
+
+.logo {
+    margin: 80px 0 50px; 
+	height: 28px;
+}
+
+.logo .xiangpu {
+	/* margin-top: 12px; */
+}
+
+.logo .touxiang {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	margin-top: 10px;
+}
+
+/*头像鼠标悬停效果begin*/
+.blockdiv {
+	width:90px;
+	height:80px;
+	margin-left: 91%;
+	margin-top: 10px;
+	display:none;
+	border-radius: 5px;
+	position: absolute;
+	z-index: 1;
+	background-color: #29323b;
+}
+
+.table-box {
+	width:90px;
+	height:80px;
+	overflow:hidden;
+}
+
+.table-box a {
+	color: #9da2a3;
+	display: block;
+	margin-top: 8px;
+	font-size: 14px;
+
+}
+
+.table-box hr {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	width: 70px;
+	height:0px; border-top:1px solid #35404a; border-right:0px; border-bottom:0px; border-left:0px;
+}
+/*头像鼠标悬停效果end*/
+
+a:hover {
+	cursor:pointer;
+	text-decoration: none;
+}
+
+footer {
+	margin-top: 20px;
+	height: 60px;
+}
+
+footer span {
+	line-height: 60px;
+}
+
+@media (max-width: 1583px) { 
+   .container-fluid {
+  	margin-left: 100px;
+  	margin-right: 100px;
+  } 
+}
+
+@media (max-width: 768px) {
+   .container-fluid {
+  		margin-left: 50px;
+  	    margin-right: 50px;
+  }
+}

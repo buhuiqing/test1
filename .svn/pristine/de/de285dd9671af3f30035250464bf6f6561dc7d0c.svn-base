@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1"/>
+	<title>设置</title>
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/personal-center-setup.css">
+</head>
+<body class="personal-center-setup-body">
+<!-- 	<nav class="navbar-zdy">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 col-xs-12 col-sm-12">
+				<div class="logo">
+					<img src="images/logo-small.png" alt=".." class="xiangpu">
+					<img alt=".." id="touxiang-id" class="pull-right touxiang">
+				</div>
+				悬停效果
+				<input type="hidden" id="pagex" />
+				<input type="hidden" id="pagey" />
+				<div class="blockdiv" id="blockdiv">
+					<div class="text-center table-box">
+						<a href="personal-center.html">个人中心</a>
+						<hr/>
+						<a id="loginout">安全退出</a>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+</nav> -->
+  <div class="container-fluid">
+	  <div class="row">
+	    <div class="col-md-12 col-xs-12 col-sm-12">
+	      <div class="personal-center-setup-logo">
+	        <img src="images/logo-red.png" alt=".." class="xiangpu">
+	      </div>
+	    </div>
+	  </div>
+  </div>
+  <div class="title">
+  	<div class="container-fluid">
+  		<h4>设置</h4>
+  	</div>
+  </div>
+  <div class="container-fluid">
+  	<div class="row">
+  		<div class="col-md-offset-4 col-xs-offset-4 col-sm-offset-4 col-md-4 col-xs-4 col-sm-4 wrap">
+  			<div class="img-div">
+  				<img class="center-block img-class" src="images/personal-center/tixing@3x.png">
+  				<p class="tixitext">声音提示</p>
+  			</div>
+  			<div class="tixing-btn">
+		      <input style="display: none;" type="checkbox" id="radio" name="switch">
+		      <label for="radio" class="radio">
+		          <span class="circle"></span>
+		          <span class="text on" id="soundOpen"></span>
+		          <span class="text off" id="soundClose"></span>
+		      </label>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+
+<!-- 	<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12 col-xs-12 col-sm-12">
+			<div class="wrap">
+				<div>
+					<h4>设置</h4>
+					<hr>
+				</div>
+				<div>
+					<span class="sound-text">声音提醒:</span>
+					<div class="sound-div">
+						<input type="button" value="开" id="soundOpen" class="sound-open">
+						<input type="button" value="关" id="soundClose" class="sound-close">
+					</div>
+				</div>
+				<div>
+					<button type="submit" id="setupBtn" class="btn-save">
+						<span class="btn-text">保&nbsp;存</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> -->
+	<footer>
+		<div class="col-md-12 col-xs-12 col-sm-12">
+			<div class="text-center">
+				<span>版权所有&copy;象翌微链科技发展有限公司&nbsp;桂ICP备1300904号</span>
+			</div>
+		</div>
+	</footer>
+	<script src="libs/jquery.min.js"></script>
+  <script src="js/public-url.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/alert.js"></script>
+	<script src="js/personal-center-setup.js"></script>
+</body>
+</html>

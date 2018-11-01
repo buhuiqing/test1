@@ -1,0 +1,229 @@
+.personal-center-data-body {
+	background-color: #fff;
+	min-width: 1100px;
+	font-size: 14px;
+}
+.personal-center-data-body .personal-center-data-logo{
+	margin: 80px 0 30px;
+    height: 28px;
+}
+.personal-center-data-body .title {
+    height: 100px;
+    margin-bottom: 25px;
+    background-color: #004b80;
+}
+.personal-center-data-body .title h4{
+	height: 100px;
+	padding-left: 100px;
+	line-height: 100px;
+	color: #fff;
+}
+.personal-center-data-body .form-edit {
+	/* margin-top: 15px; */
+}
+.personal-center-data-body .form-edit .dqtx{
+	height: 70px;
+}
+
+.personal-center-data-body .form-edit img {
+	width: 70px;
+	height: 70px;
+	position: relative;
+	border-radius: 8px;
+}
+
+/* 编辑头像 */
+.personal-center-data-body .txparent-div {
+	width: 60%;
+	height: 70px;
+	float: left;
+}
+
+.personal-center-data-body .editimg-bgdiv {
+	width: 70px;
+	height: 70px;
+	background-color: #050505;
+	border-radius: 50%;
+    margin-top: -71px;
+    display: none;
+}
+
+.personal-center-data-body .editimg-childrendiv {
+	background-color: #068fe4;
+	border-radius: 5px;
+	position: absolute;
+    width: 60px;
+    height: 25px;
+    margin-top: 23px;
+    margin-left: 5px;
+}
+
+.personal-center-data-body .editimg-childrendiv span {
+	font-size: 12px;
+	color: #ffffff;
+}
+
+.personal-center-data-body .form-edit h4 {
+	font-weight: bold;
+	margin-left: 20px;
+	padding-top: 20px;
+    font-family: SimHei;
+}
+
+.personal-center-data-body .form-edit hr {
+	margin-left: 20px;
+	width: 95%;
+	border: 1px solid #c6caca;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-top-width: 0px;
+}
+.personal-center-data-body .form-edit .head-text {
+	width: 25%;
+	color:#656c73;
+	line-height: 70px;
+	float: left;
+}
+.personal-center-data-body .form-edit .cenrerlist{
+	height: 40px;
+	margin-top: 30px;
+	line-height: 40px;
+}
+.personal-center-data-body .form-edit .nick-text {
+	width: 25%;
+	color: #656c73;
+	float: left;
+}
+.personal-center-data-body .form-edit input {
+	width: 75%;
+	height: 40px;
+    border-radius: 5px;  
+    background-color: #dadede;
+    display: inline;
+	box-shadow: none;
+	color:#3d454c;
+	font-size:16px;
+	float: left;
+    border-radius: 3px;
+    background-color: #f1f1f1;
+    border: solid 1px #e2e2e2;
+}
+
+.personal-center-data-body .form-edit .btn-save {
+  width: 100px;
+  height: 40px;
+  margin: 20px 0 20px 25%;
+  border-radius: 3px;
+  background-color: #909aa4;
+  outline: none;
+  border: 0;
+}
+.personal-center-data-body .form-edit .btn-save:hover{
+  background-color: #a3b0bd;
+}
+.personal-center-data-body .form-edit .btn-text {
+	color: #ffffff;
+	font-size: 15px;
+}
+.personal-center-data-body .form-edit .weilianhao-text {
+	margin-left: 35px;
+	color: #656c73;
+}
+
+.personal-center-data-body .form-edit .weilianhao-text+label {
+	margin-top: 15px;
+	margin-left: 28px;
+	color: #3d454c;
+}
+
+.personal-center-data-body .form-edit .sex-text {
+	margin-left: 50px;
+	margin-top: 15px;
+	color: #656c73;
+}
+.personal-center-data-body .form-edit .sex-text label{
+	height: 20px;
+	line-height: 20px;
+	margin-bottom: 0;
+	margin-right: 35px;
+	font-weight: normal;
+}
+.personal-center-data-body .form-edit .sex-text input{
+	width: 16px;
+	height: 20px;
+	margin-top: 0;
+	margin-right: 5px;
+}
+.personal-center-data-body .form-edit .sex-div {
+	width: 95px;
+	height: 45px;
+	border-radius: 5px;
+	background-color: #dadede;
+	margin-top: -30px;
+    margin-left: 108px;
+	position: relative;
+	border:1px solid #ccc;
+}
+
+.personal-center-data-body .form-edit .man {
+    width: 45px;
+    height: 41px;
+    margin-left: 2px;
+    margin-top: 1px;
+    position: absolute;
+    border:none;
+}
+
+.personal-center-data-body .form-edit .woman {
+    width: 45px;
+    height: 41px;
+    position: absolute;
+    margin-left: 47px;
+    margin-top: 1px;
+    border:none;
+}
+.personal-center-data-body .form-edit .autograph{
+	height: 80px;
+	margin-top: 30px;
+}
+
+.personal-center-data-body .form-edit .signature-text {
+	width: 25%;
+	height: 80px;
+	color:#656c73;
+	float: left;
+}
+
+.personal-center-data-body .form-edit .signature-text+textarea {
+	width: 75%;
+    border-radius: 3px;
+    background-color: #f1f1f1;
+    border: solid 1px #e2e2e2;
+}
+
+.personal-center-data-body .form-edit .mobile-text {
+	margin-left: 23px;
+	color: #656c73;
+}
+
+.personal-center-data-body .form-edit .address-text {
+	margin-left: 50px;
+	color: #656c73;
+}
+
+.personal-center-data-body .form-edit .address-text+input{
+	width:400px;
+}
+
+.personal-center-data-body .index-gohome {
+	margin-top:-60px;
+	margin-right:230px;
+	float:right;
+	position: relative;
+}
+
+@media (max-width: 1583px) {
+}
+
+@media (max-width: 768px) {
+}

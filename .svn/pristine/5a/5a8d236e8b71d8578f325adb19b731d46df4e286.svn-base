@@ -1,0 +1,55 @@
+.personal-center-about-body {
+	background-color: #fff;
+	min-width: 1100px;
+	font-size: 14px;
+}
+.personal-center-about-body .personal-center-about-logo{
+	margin: 80px 0 30px;
+    height: 28px;
+}
+.personal-center-about-body .title {
+    height: 100px;
+    margin-bottom: 25px;
+    background-color: #004b80;
+}
+.personal-center-about-body .title h4{
+	height: 100px;
+	padding-left: 100px;
+	line-height: 100px;
+	color: #fff;
+}
+.personal-center-about-body .wrap {
+	background-color: #dde1e1;
+	height: 550px;
+	border-radius: 5px;
+	margin-top: 13px;
+}
+
+.personal-center-about-body .wrap:first-child{
+	padding-top: 235.5px;
+}
+
+.personal-center-about-body .wrap img {
+	width: 295px;
+	height: 79px;
+}
+
+.personal-center-about-body .wrap p{
+	margin-top: 10px;
+	color: #73787d;
+	font-size: 14px;
+	text-align: center;
+}
+
+.personal-center-about-body .index-gohome {
+	margin-top:-60px;
+	margin-right:230px;
+	float:right;
+	position: relative;
+}
+
+@media (max-width: 1583px) {
+}
+
+@media (max-width: 768px) {
+}
